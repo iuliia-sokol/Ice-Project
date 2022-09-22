@@ -103,16 +103,21 @@ ul {
 // ЗАДАЄМО ЗАГОЛОВКАМ СЕКЦІЙ
 
 .section__header {
-  margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.18;
+  font-family: 'Seymour One';
+  font-size: 30px;
+  line-height: 1.27;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $main-black;
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 1.26;
+  }
 
   @media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
     font-size: 36px;
-    line-height: 1.16;
+    line-height: 1.25;
   }
 }
