@@ -3,6 +3,9 @@ body {
   color: $main-black;
   line-height: 1.76;
 }
+.cursor {
+  cursor: url('../images/cursor.png'), auto;
+}
 h1,
 h2,
 h3,
