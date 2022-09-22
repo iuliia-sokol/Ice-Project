@@ -1,0 +1,130 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $main-black;
+  line-height: 1.76;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+// ВИКОРИСТОВУЄМО ДЛЯ ПРИХОВАНИХ ЕЛЕМЕНТІВ
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+// ЗАДАЄМО ВСІМ КОНТЕНТНИМ ЗОБРАЖЕННЯМ
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// ЗАДАЄМО ВСІМ СПИСКАМ
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+// ЗАДАЄМО ВСІМ ПОСИЛАННЯМ
+
+.links {
+  color: inherit;
+  text-decoration: none;
+  @include transition(color);
+
+  &--selected:hover,
+  &--selected:focus {
+    color: $accent-blue;
+  }
+}
+
+// ЗАДАЄМО ВСІМ КНОПКАМ
+
+.btn {
+  font-family: inherit;
+  text-align: center;
+  border-radius: 4px;
+  color: $txt-main;
+  background-color: $light-grey;
+  cursor: pointer;
+  @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $accent-blue;
+  }
+}
+
+// ЗАДАЄМО ВСІМ КОНТЕЙНЕРАМ-ОБГОРТКАМ
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+// ЗАДАЄМО ВСІМ СЕКЦІЯМ
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 480px) {
+    min-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+// ЗАДАЄМО ЗАГОЛОВКАМ СЕКЦІЙ
+
+.section__header {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
