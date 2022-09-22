@@ -97,7 +97,7 @@ ul {
 .btn--transparent {
   background-color: transparent;
   border: 2px solid $accent-yellow;
-  @include transition(color, background-color);
+  @include transition(color, border-color);
 
   &:hover {
     border: 2px solid $accent-green;
