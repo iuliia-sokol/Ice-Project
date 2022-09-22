@@ -32,6 +32,15 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+// КЛАС ДЛЯ ПРИХОВУВАННЯ МОДАЛОК
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 // ЗАДАЄМО ВСІМ КОНТЕНТНИМ ЗОБРАЖЕННЯМ
 
 .image {
@@ -57,10 +66,45 @@ ul {
 // ЗАДАЄМО ВСІМ КНОПКАМ
 
 .btn {
-  font-family: inherit;
+  font-family: 'Montserrat';
   text-align: center;
-  border-radius: 4px;
+  border-radius: 10px;
+  padding: 12px 34px;
   cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $main-black;
+}
+
+// ДЛЯ КНОПОК З ЗАЛИВКОЮ ФОНУ
+
+.btn--standart {
+  background-color: $accent-yellow;
+  @include transition(color, background-color);
+
+  &:hover {
+    background-color: $accent-green;
+  }
+  &:focus {
+    background-color: $accent-green;
+    color: $main-white;
+  }
+}
+
+// ДЛЯ ПРОЗОРИХ КНОПОК З БОРДЕРАМИ
+
+.btn--transparent {
+  background-color: transparent;
+  border: 2px solid $accent-yellow;
+
+  &:hover {
+    border: 2px solid $accent-green;
+  }
+  &:focus {
+    border: 2px solid $accent-green;
+    color: $main-white;
+  }
 }
 
 // ЗАДАЄМО ВСІМ КОНТЕЙНЕРАМ-ОБГОРТКАМ
