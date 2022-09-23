@@ -53,6 +53,10 @@
   }
 }
 
+.emulation {
+  background-color: $main-bg-green;
+  padding-bottom: 120px;
+}
 // GALLERY
 
 .gallery {
@@ -62,9 +66,16 @@
   }
   &__slider {
     max-width: 1013px;
+    // position: absolute;
+    transform: translateY(-98px);
+  }
+  &__list {
+    display: flex;
+    margin-bottom: 0;
+    min-width: 0;
   }
   &__item {
-    width: 100%;
+    min-width: 100%;
     min-height: 422px;
     border-radius: 24px;
     background-color: transparent;
