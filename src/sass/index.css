@@ -17,8 +17,7 @@ h5,
 h6,
 p,
 ul {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -144,20 +143,35 @@ ul {
   align-items: center;
 }
 
-.main-pre-title {
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.main-title {
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .products {
   position: relative;
-  background-image: url("../images/bg-products.jpg");
-  background-size: cover;
+  background-image: url("../images/products/bg-products-tab.jpg");
+  background-size: contain;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .products {
+    background-image: url("../images/products/bg-products-tab@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .products {
+    background-image: url("../images/products/bg-products-desk.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .products {
+    background-image: url("../images/products/bg-products-desk@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products {
+    background-image: url("../images/products/bg-products-desk.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .products {
+    background-image: url("../images/products/bg-products-desk@2x.jpg");
+  }
 }
 .products__list {
   margin-top: 148px;
@@ -284,14 +298,15 @@ ul {
   align-items: flex-end;
 }
 .products__link:hover .products__icon {
-  fill: tan;
+  transform: scale(1.1);
 }
 .products__link:focus .products__icon {
-  width: 110%;
-  stroke: currentColor;
-  stroke-width: 3px;
+  transform: scale(1.1);
+  stroke: #131313;
+  stroke-width: 1px;
 }
 .products__icon {
   width: 40px;
   height: 15px;
+  fill: #131313;
 }/*# sourceMappingURL=index.css.map */
