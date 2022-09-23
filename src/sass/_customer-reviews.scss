@@ -11,12 +11,8 @@
     display: flex;
     margin-bottom: 0;
     min-width: 0;
-    // overflow-x: hidden;
   }
   &__item {
-    //   display: flex;
-    //   flex-direction: column;
-    //   flex-wrap: wrap;
     min-width: 100%;
     min-height: auto;
     position: relative;
@@ -100,42 +96,57 @@
 }
 
 .swiper-button-prev {
-  outline: 1px solid blue;
+  // outline: 1px solid blue;
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 1;
   width: 88px;
   height: 150%;
-  padding: 0;
+  border-radius: 24px;
+  // padding: 0;
   border: none;
   background-color: transparent;
-  transform: translateX(-100%);
+  background-image: linear-gradient(
+    93.32deg,
+    rgba(132, 161, 120, 0.5) -10.68%,
+    rgba(252, 252, 252, 0.2) 59.53%
+  );
+  opacity: 0.3;
+  transform: translateX(-50%);
 }
 .swiper-button-next {
-  outline: 1px solid blue;
+  // outline: 1px solid blue;
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 1;
   width: 88px;
   height: 150%;
-  padding: 0;
+  border-radius: 24px;
+  // padding: 0;
   border: none;
   background-color: transparent;
-  transform: translateX(100%);
+  background-image: linear-gradient(
+    93.32deg,
+    rgba(132, 161, 120, 0.5) -10.68%,
+    rgba(252, 252, 252, 0.2) 59.53%
+  );
+  // background-image: linear-gradient(
+  //   90deg,
+  //   rgba(252, 252, 252, 0.2) 49.09%,
+  //   rgba(132, 161, 120, 0.5) 93.52%
+  // );
+  opacity: 0.3;
+  transform: translateX(50%) rotate(180deg);
 }
 
 .swiper-pagination {
-  //   position: absolute;
   margin-top: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 18px;
-  // text-align: center;
-  // transition: 0.3s opacity;
-  // transform: translate3d(0, 0, 0);
   z-index: 10;
 }
 .swiper-pagination-bullet {
@@ -143,16 +154,13 @@
   border-radius: 50%;
   width: 12px;
   height: 12px;
-  text-align: center;
-  // line-height: ;
-  font-size: 12px;
-  color: #000;
   opacity: 1;
-  background: rgba(0, 0, 0, 0.2);
+  background-color: $pagination-grey;
 }
 .swiper-pagination-bullet-active {
-  color: #fff;
-  background: #007aff;
+  width: 14px;
+  height: 14px;
+  background-color: $main-bg-green;
 }
 @media screen and (min-width: 768px) {
   .customers-reviews {
