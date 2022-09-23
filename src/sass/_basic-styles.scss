@@ -43,6 +43,7 @@ ul {
 
 // ЗАДАЄМО ВСІМ КОНТЕНТНИМ ЗОБРАЖЕННЯМ
 
+img,
 .image {
   display: block;
   max-width: 100%;
@@ -50,21 +51,21 @@ ul {
 }
 
 // ЗАДАЄМО ВСІМ СПИСКАМ
-
+ul,
 .list {
   list-style: none;
   padding-left: 0;
 }
 
 // ЗАДАЄМО ВСІМ ПОСИЛАННЯМ
-
+a,
 .links {
   color: inherit;
   text-decoration: none;
 }
 
 // ЗАДАЄМО ВСІМ КНОПКАМ
-
+button,
 .btn {
   font-family: 'Montserrat';
   text-align: center;
@@ -113,16 +114,18 @@ ul {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 
   @media screen and (min-width: 480px) {
     width: 480px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding: 0 32px;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    padding: 0 16px;
   }
 }
 
@@ -130,19 +133,6 @@ ul {
 
 .section {
   padding-top: 60px;
-  padding-bottom: 60px;
-
-  @media screen and (min-width: 480px) {
-    min-width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    min-width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    min-width: 1200px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 // ЗАДАЄМО ЗАГОЛОВКАМ СЕКЦІЙ
