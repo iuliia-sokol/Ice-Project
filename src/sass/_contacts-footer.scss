@@ -1,13 +1,8 @@
-// .red {
-//   width: 1600px;
-//   height: 500px;
-//   background-color: red;
-// }
 .contact {
-  // position: absolute;
   display: flex;
   transform: translateY(1110px);
 }
+
 .contact-list {
   display: flex;
   gap: 20px;
@@ -22,37 +17,77 @@
   background: #fcfcfc;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.86;
-  letter-spacing: 0.04em;
+  @include font(500, 12px, 1.86, 0.04em);
   text-decoration: none;
 }
 
+.contact-cafe {
+  display: flex;
+  width: 80px;
+  height: 16px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  background: #f8d24e;
+  border-radius: 4px;
+}
+
 .contact-adress {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.83;
-  letter-spacing: 0.04em;
+  margin-top: 8px;
+  @include font(500, 12px, 1.86, 0.04em);
   color: #d6936d;
+}
+
+.mode-data {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 17px;
+  border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
 }
+
 .contact-mode-day {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.86;
+  @include font(500, 12px, 1.86, 0.04em);
   color: #131313;
 }
 
 .contact-mode-time {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.86;
+  @include font(500, 12px, 1.86, 0.04em);
   color: #ababab;
+  margin-bottom: 8px;
+  
+  
+  
+}
+
+.contact-link {
+  @include font(500, 12px, 1.5, 0.04em);
+  color: #131313;
 }
 .contact-button {
   display: flex;
   flex-direction: column;
+}
+
+.button-yelow {
+  width: 196px;
+  border: 1px solid #f8d24e;
+  border-radius: 10px;
+  @include font(600, 14px, 1.29, 0.04em);
+  align-items: center;
+  text-align: center;
+  color: #131313;
+}
+
+.button-green {
+  border: 2px solid #f8d24e;
+  border-radius: 4px;
+  background-color: transparent;
+  @include font(600, 14px, 1.29, 0.04em);
+  align-items: center;
+  text-align: center;
+  color: #131313;
 }
 
 /*----------------footer-------------*/
@@ -64,52 +99,21 @@
   padding: 1200px 20px 0 20px;
 }
 
-
-
 .footer-paragraf {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
+  @include font(700, 18px, 1.22, 0.04em);
   text-transform: uppercase;
   color: #fcfcfc;
 }
 .footer-title {
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 41px;
-  letter-spacing: 0.04em;
+  @include font(700, 34px, 1.2, 0.04em);
   text-transform: uppercase;
   color: #fcfcfc;
 }
-
-// .footer-btn-1 {
-//   background: #f8d24e;
-//   border: 1px solid #f8d24e;
-//   border-radius: 4px;
-//   font-weight: 600;
-//   font-size: 14px;
-//   line-height: 1.29;
-//   align-items: center;
-//   text-align: center;
-//   color: #131313;
-// }
-
-// .footer-btn-2 {
-//   border: 2px solid #f8d24e;
-//   border-radius: 4px;
-//   background-color: transparent;
-//   font-weight: 600;
-//   font-size: 14px;
-//   line-height: 1.29;
-//   align-items: center;
-//   text-align: center;
-//   color: #131313;
-// }
-
 .soc-list {
   display: flex;
-  margin-top: 42px;
+  justify-content: flex-end;
   gap: 28px;
+  margin-top: 42px;
 }
 
 .soc-item {
@@ -137,21 +141,18 @@
 }
 
 .footer-tel {
+  display: block;
   text-align: right;
   border-bottom: 1px solid #e1e1e1;
 }
 
 .footer-tel-text {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.86;
+  @include font(700, 12px, 1.86, 0.04em);
   text-align: right;
   color: #131313;
 }
 .footer-tel-tel {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.86;
+  @include font(700, 12px, 1.86, 0.04em);
   text-align: right;
   color: #ffffff;
 }
@@ -159,12 +160,7 @@
 .footer-ltd {
   margin-top: 16px;
   margin-bottom: 62px;
-
   text-align: center;
   color: #7a7a7a;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.86;
-}
-
-/*-----------------------CONTACTS--------------------*/
+  @include font(700, 14px, 1.86, 0.04em);
+  }
