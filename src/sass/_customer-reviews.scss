@@ -1,0 +1,108 @@
+.customers-reviews {
+  &__container {
+    width: 1200px;
+    padding: 0 116px;
+  }
+  &__slider {
+    width: 100%;
+  }
+  &__list {
+    display: flex;
+    margin-bottom: 0;
+    min-width: 0;
+  }
+  &__item {
+    outline: 1px solid blue;
+    //   display: flex;
+    //   flex-direction: column;
+    //   flex-wrap: wrap;
+    min-width: 100%;
+    width: 100%;
+    min-height: auto;
+    position: relative;
+    background-color: white;
+  }
+  &__item::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -100%);
+    display: block;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+  }
+  &__item:nth-child(1)::before {
+    background-color: #84a178;
+    /* background-image: url("../images/customer1.jpg"); */
+    background-position: center;
+    background-size: contain;
+  }
+  &__item:nth-child(2)::before {
+    background-color: #84a178;
+    /* // background-image: url("../images/customer2.jpg"); */
+    background-position: center;
+    background-size: contain;
+  }
+  &__item:nth-child(3)::before {
+    background-color: #84a178;
+    /* // background-image: url("../images/customer3.jpg"); */
+    background-position: center;
+    background-size: contain;
+  }
+  &__item:nth-child(4)::before {
+    background-color: #84a178;
+    /* // background-image: url("../images/customer4.jpg"); */
+    background-position: center;
+    background-size: contain;
+  }
+
+  &__quote {
+    min-height: 138px;
+    display: block;
+    margin-bottom: 30px;
+    padding: 39px 109px;
+    background-color: #84a178;
+    border-radius: 24px;
+    font-size: 12px;
+    line-height: 2.58;
+    text-align: center;
+    color: #fcfcfc;
+  }
+  &__name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.85;
+    text-align: center;
+    color: #131313;
+  }
+}
+
+.swiper-button-prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.swiper-button-next {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.swiper-button-prev {
+  width: 88px;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.swiper-button-next {
+  width: 88px;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
