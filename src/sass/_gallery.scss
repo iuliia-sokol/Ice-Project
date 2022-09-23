@@ -1,15 +1,10 @@
 .gallery-reviews-wrapper {
   width: 100%;
   margin: 0 auto;
-  padding-top: 118px;
-  padding-bottom: 118px;
-  background-color: $bg-hero-alt;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url('../images/hero-bg/hero-bg-image-480-1x-min.jpg');
+  //   padding-top: 118px;
+  //   padding-bottom: 118px;
+  background-color: transparent;
+  //   background-image: url('../images/hero-bg/hero-bg-image-480-1x-min.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,111 +14,30 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url('../images/hero-bg/hero-bg-image-480-2x-min.jpg');
-  }
-}
-
-@media (min-device-pixel-ratio: 3),
-  (min-resolution: 288dpi),
-  (min-resolution: 3dppx) {
-  .hero {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url('../images/hero-bg/hero-bg-image-480-2x-min.jpg');
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .hero {
-    min-width: 480px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url('../images/hero-bg/hero-bg-image-768-1x-min.jpg');
-
-    &__container {
-      width: 390px;
-    }
-  }
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url('../images/hero-bg/hero-bg-image-768-2x-min.jpg');
-  }
-}
-
-@media (min-device-pixel-ratio: 3),
-  (min-resolution: 288dpi),
-  (min-resolution: 3dppx) {
-  .hero {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url('../images/hero-bg/hero-bg-image-768-3x-min.jpg');
+    // background-image: url('../images/hero-bg/hero-bg-image-480-2x-min.jpg');
   }
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
+  .gallery-reviews-wrapper {
     min-width: 768px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url('../images/hero-bg/hero-bg-image-1600-1x-min.jpg');
-
-    &__container {
-      width: 390px;
-    }
+    // background-image: url('../images/hero-bg/hero-bg-image-1600-1x-min.jpg');
   }
 }
 
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url('../images/hero-bg/hero-bg-image-1600-2x-min.jpg');
-  }
-}
-@media (min-device-pixel-ratio: 3),
-  (min-resolution: 288dpi),
-  (min-resolution: 3dppx) {
-  .hero {
-    background-image: url('../images/hero-bg/hero-bg-image-1600-3x-min.jpg');
+  .gallery-reviews-wrapper {
+    // background-image: url('../images/hero-bg/hero-bg-image-1600-2x-min.jpg');
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .hero {
+  .gallery-reviews-wrapper {
     min-width: 1200px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
+    // padding-top: 200px;
+    // padding-bottom: 200px;
+    max-width: 1920px;
   }
 }
