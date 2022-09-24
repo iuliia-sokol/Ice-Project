@@ -165,24 +165,6 @@ a,
     padding-bottom: 89px;
   }
 }
-
-.about-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-@media screen and (min-width: 768px) {
-  .about-wrap {
-    gap: 32px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .about-wrap {
-    gap: 108px;
-    align-items: center;
-  }
-}
-
 .about__pretitle {
   text-align: center;
   font-style: normal;
@@ -206,34 +188,24 @@ a,
     line-height: 1.2333333333;
   }
 }
-
 .about__title {
-  font-family: "Seymour One";
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 1.26;
-  text-align: center;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
   margin-bottom: 32px;
+  color: #fcfcfc;
 }
 @media screen and (min-width: 768px) {
   .about__title {
-    font-size: 34px;
-    line-height: 1.2647058824;
     letter-spacing: 0.06em;
     margin-bottom: 72px;
   }
 }
 @media screen and (min-width: 1200px) {
   .about__title {
-    font-size: 36px;
-    line-height: 1.25;
     margin-bottom: 82px;
   }
 }
-
 .about__img {
   border-radius: 50%;
   max-width: 279px;
@@ -253,8 +225,33 @@ a,
     right: 5px;
   }
 }
+.about__icon {
+  margin-left: 5px;
+  fill: none;
+  stroke: #131313;
+  width: 12px;
+  height: 12px;
+  transition: stroke 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.img-wrap {
+.about-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .about-wrap {
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-wrap {
+    gap: 108px;
+    align-items: center;
+  }
+}
+
+.about-img-wrap {
   position: relative;
   width: 278px;
   height: 278px;
@@ -264,20 +261,20 @@ a,
   margin-bottom: 62px;
 }
 @media screen and (min-width: 768px) {
-  .img-wrap {
+  .about-img-wrap {
     width: 334px;
     height: 330px;
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
-  .img-wrap {
+  .about-img-wrap {
     width: 500px;
     height: 500px;
   }
 }
 
-.text-wrap {
+.about-text-wrap {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -285,19 +282,19 @@ a,
   gap: 4px;
 }
 @media screen and (min-width: 480px) {
-  .text-wrap {
+  .about-text-wrap {
     padding: 0;
     max-width: 334px;
   }
 }
 @media screen and (min-width: 768px) {
-  .text-wrap {
+  .about-text-wrap {
     align-items: flex-start;
     gap: 8px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .text-wrap {
+  .about-text-wrap {
     max-width: 463px;
   }
 }
@@ -319,7 +316,6 @@ a,
     font-size: 14px;
   }
 }
-
 .about__text--hidden {
   display: none;
 }
@@ -341,32 +337,23 @@ a,
   }
 }
 
-.about__icon {
-  margin-left: 5px;
-  fill: none;
-  stroke: #131313;
-  width: 12px;
-  height: 12px;
-  transition: stroke 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.text-wrap .about-btn:focus .about__icon {
+.about-text-wrap .about-btn:focus .about__icon {
   stroke: #fcfcfc;
 }
 
-.backdrop {
+.about-backdrop {
   position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
   padding-top: 20px;
 }
-.backdrop.is-hidden .modal {
+.about-backdrop.is-hidden .about-modal {
   transform: translate(-50%, -50%) scale(0) rotate(180deg);
   border-radius: 50%;
 }
 
-.modal {
+.about-modal {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -383,12 +370,12 @@ a,
   gap: 20px;
 }
 @media screen and (min-width: 480px) {
-  .modal {
+  .about-modal {
     width: 440px;
   }
 }
 @media screen and (min-width: 768px) {
-  .modal {
+  .about-modal {
     padding: 32px 60px;
     width: 568px;
     gap: 32px;
@@ -411,7 +398,7 @@ a,
   background-color: #fcfcfc;
 }
 
-.modal__title {
+.about-modal__title {
   color: #131313;
   font-family: "Seymour One";
   font-style: normal;
@@ -421,7 +408,7 @@ a,
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .modal__title {
+  .about-modal__title {
     font-size: 20px;
     line-height: 1.4;
   }
@@ -438,7 +425,7 @@ a,
   }
 }
 
-.modal__text {
+.about-modal__text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -447,7 +434,7 @@ a,
   color: #131313;
 }
 @media screen and (min-width: 768px) {
-  .modal__text {
+  .about-modal__text {
     font-size: 16px;
     line-height: 1.4;
   }
@@ -515,6 +502,11 @@ a,
     line-height: 1.224137931;
   }
 }
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .advantages__text {
   font-style: normal;
   font-weight: 700;
@@ -556,12 +548,6 @@ a,
   .advantages-list {
     justify-content: space-between;
   }
-}
-
-.advantages__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .gallery-reviews-wrapper {
