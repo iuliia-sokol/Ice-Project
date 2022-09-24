@@ -357,6 +357,7 @@ a,
   background-color: #84a178;
   color: #fcfcfc;
   padding-top: 0;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .advantages {
