@@ -1,0 +1,170 @@
+.footer-franchisee-overlay {
+  width: 100vw;
+  height: 100vh;
+  padding: 30px 0;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  @include transition(opacity);
+}
+
+.footer-franchisee {
+  width: calc(100vw - 40px);
+  height: auto;
+  padding: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: $main-white;
+  border-radius: 10px;
+  border: 2px solid $accent-yellow;
+  transform: translate(-50%, -50%) scale(1);
+  @include transition(transform);
+
+  .footer-franchisee-overlay.is-hidden & {
+    transform: translate(-50%, -50%) scale(2);
+  }
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__header {
+    display: inline-block;
+    max-width: 221px;
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.4;
+    align-self: center;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer-franchisee {
+    width: 450px;
+    min-height: 509px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-franchisee {
+    width: 528px;
+    min-height: 581px;
+  }
+}
+
+.franchisee-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  //   color: $txt-paragraph-grey;
+
+  &__wrapper {
+    width: 100%;
+    margin-bottom: 12px;
+    position: relative;
+    display: flex;
+  }
+  &__wrapper:last-of-type {
+    margin-bottom: 0px;
+  }
+  &__input {
+    width: 100%;
+    height: 32px;
+    padding: 8px 12px 9px;
+    background-color: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    @include transition(border-color);
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 64px;
+    padding: 8px 12px 9px;
+    background-color: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    overflow: scroll;
+    resize: none;
+    @include transition(border-color);
+
+    // &::placeholder {
+    //   font-size: 12px;
+    //   line-height: 1.167;
+    //   letter-spacing: 0.01em;
+    //   color: rgba(117, 117, 117, 0.5);
+    // }
+  }
+  &__label {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  &__btn {
+    margin-top: 24px;
+    border: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-franchisee {
+    &__header {
+      line-height: 1.15;
+    }
+  }
+}
+
+.footer-franchisee__close-btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  @extend %flex-center;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  //   &__icon {
+  //     width: 18px;
+  //     height: 18px;
+  //     fill: $txt-logo-black;
+  //     @include transition(fill);
+  //     z-index: 15;
+
+  //     .close-btn:hover &,
+  //     .close-btn:focus & {
+  //       fill: $accent-blue;
+  //     }
+}

@@ -1,0 +1,77 @@
+<!-- Footer franchisee modal form  -->
+<!-- is-hidden -->
+<div class="footer-franchisee-overlay" data-modal>
+  <div class="footer-franchisee">
+    <button data-modal-close class="footer-franchisee__close-btn">
+      <!-- <svg class="close-btn__icon">
+        <use href="./images/icons.svg#icon-modal-close-btn"></use>
+      </svg> -->
+    </button>
+    <div class="footer-franchisee__wrapper">
+      <p class="footer-franchisee__header">
+        Thank you for your interest in owning an Ice Cream shop
+      </p>
+      <p class="footer-franchisee__text">
+        Due to the overwhelming volume of franchise requests we are not
+        accepting new franchisee applications at this time. Once the application
+        process resumes, we will contact you for further information. Please
+        fill out the contact information below and we will reach out for
+        additional information. We appreciate your patience.
+      </p>
+      <form
+        action="javascript:void(0);"
+        class="footer-franchisee__form franchisee-form"
+        data-window
+      >
+        <div class="franchisee-form__wrapper">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="franchisee-form__input"
+            autocomplete="off"
+            placeholder=" "
+            required
+          />
+          <label for="username" class="franchisee-form__label">Name</label>
+        </div>
+
+        <div class="franchisee-form__wrapper">
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="franchisee-form__input"
+            autocomplete="off"
+            placeholder=" "
+            required
+          />
+          <label for="phone" class="franchisee-form__label">Phone</label>
+        </div>
+
+        <div class="franchisee-form__wrapper">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="franchisee-form__input"
+            autocomplete="off"
+            placeholder=" "
+            required
+          />
+          <label for="email" class="franchisee-form__label">Email</label>
+        </div>
+        <div class="franchisee-form__wrapper">
+          <textarea
+            name="comment"
+            id="comment"
+            placeholder=" "
+            class="franchisee-form__textarea"
+          ></textarea>
+          <label for="comment" class="franchisee-form__label">Comment</label>
+        </div>
+        <button class="btn btn--standart franchisee-form__btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
