@@ -1,14 +1,7 @@
-// @mixin font($fw, $fs, $lh, $ls) {
-//   font-weight: $fw;
-//   font-size: $fs;
-//   line-height: $lh;
-//   letter-spacing: $ls;
-// }
-
 .contact {
   display: flex;
   background-color: #84a178;
- }
+}
 
 .contact-list {
   display: flex;
@@ -72,8 +65,7 @@
   align-items: center;
   flex-direction: column;
   transform: translateY(-347px);
-  }
-  
+}
 
 .button-yelow {
   width: 196px;
@@ -111,17 +103,14 @@
 }
 
 .footer-title {
-  
   width: 180px;
-
 }
 
 .text-passion {
   @include font(700, 34px, 1.2, 0.04em);
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: $main-white;
 }
-
 
 .soc__list {
   display: flex;
@@ -129,7 +118,6 @@
   gap: 28px;
   margin-top: 42px;
   margin-bottom: 38px;
-
 }
 .soc__item {
   width: 32px;
@@ -144,12 +132,12 @@
 }
 
 .soc__icon {
-  fill: #84a178;
+  fill: $accent-green;
 }
 
 .soc__icon:hover,
 .soc__icon:focus {
-  fill: white;
+  fill: $main-white;
 }
 
 .footer-tel {
@@ -169,9 +157,7 @@
   color: #ffffff;
 }
 
-
 .footer-ltd {
-  
   width: 170px;
   text-align: center;
   margin: 0 auto;
@@ -183,5 +169,4 @@
   display: flex;
   color: #7a7a7a;
   @include font(700, 14px, 1.86, 0.04em);
-  
 }
