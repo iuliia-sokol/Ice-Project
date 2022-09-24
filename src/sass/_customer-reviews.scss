@@ -130,11 +130,8 @@
 
 @media screen and (min-width: 480px) {
   .customers-reviews {
-    &__slider {
-      max-width: 440px;
-    }
-    &__quote {
-      width: 100%;
+    &__container {
+      width: 480px;
     }
   }
   @media screen and (min-width: 768px) {
