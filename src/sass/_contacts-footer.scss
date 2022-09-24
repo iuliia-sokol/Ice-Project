@@ -1,5 +1,7 @@
 .contact {
   display: flex;
+  align-items: center;
+  background-color: #84a178;
   transform: translateY(1110px);
 }
 
@@ -91,7 +93,6 @@
 .footer {
   display: flex;
   flex-direction: column;
-  // position: relative;
   background: #84a178;
   padding: 1200px 20px 0 20px;
 }
