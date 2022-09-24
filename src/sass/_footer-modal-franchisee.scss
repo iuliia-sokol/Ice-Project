@@ -1,7 +1,6 @@
 .footer-franchisee-overlay {
   width: 100vw;
   height: 100vh;
-  padding: 30px 0;
   display: block;
   position: fixed;
   top: 0;
@@ -78,18 +77,6 @@
     margin-bottom: 24px;
   }
 }
-@media screen and (min-width: 480px) {
-  .footer-franchisee {
-    width: 450px;
-    min-height: 509px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-franchisee {
-    width: 528px;
-    min-height: 581px;
-  }
-}
 
 .franchisee-form {
   width: 100%;
@@ -159,10 +146,54 @@
   }
 }
 
+@media screen and (min-width: 480px) {
+  .footer-franchisee {
+    width: 440px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-franchisee {
+    width: 568px;
+    padding: 32px 60px;
     &__header {
-      line-height: 1.15;
+      max-width: 322px;
+      font-size: 20px;
+      line-height: 1.4;
+      margin-bottom: 24px;
+    }
+    &__text {
+      display: inline-block;
+      width: 448px;
+      margin-bottom: 32px;
+      font-size: 16px;
+    }
+    &__close-btn {
+      width: 20px;
+      height: 20px;
+      top: 20px;
+      right: 20px;
+    }
+    &__close-icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .franchisee-form {
+    width: 368px;
+    &__wrapper {
+      margin-bottom: 16px;
+    }
+    &__wrapper:last-of-type {
+      margin-bottom: 0px;
+    }
+    &__label {
+      font-size: 14px;
+    }
+    &__btn {
+      margin-top: 32px;
+      font-size: 14px;
+      line-height: 1.214;
     }
   }
 }

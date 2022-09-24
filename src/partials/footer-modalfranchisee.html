@@ -1,8 +1,12 @@
 <!-- Footer franchisee modal form  -->
 <!-- is-hidden -->
-<div class="footer-franchisee-overlay" data-modal>
+<div class="footer-franchisee-overlay" data-franchisee-modal>
   <div class="footer-franchisee">
-    <button data-modal-close class="footer-franchisee__close-btn">
+    <button
+      data-franchisee-close
+      class="footer-franchisee__close-btn"
+      aria-label="close modal window"
+    >
       <svg class="footer-franchisee__close-icon">
         <use href="./images/icons.svg#header-modal-close-btn"></use>
       </svg>
@@ -21,54 +25,62 @@
       <form
         action="javascript:void(0);"
         class="footer-franchisee__form franchisee-form"
-        data-window
+        data-franchisee-window
       >
         <div class="franchisee-form__wrapper">
           <input
             type="text"
-            id="username"
-            name="username"
+            id="franchisee-username"
+            name="franchisee-username"
             class="franchisee-form__input"
             autocomplete="off"
             placeholder=" "
             required
           />
-          <label for="username" class="franchisee-form__label">Name</label>
+          <label for="franchisee-username" class="franchisee-form__label"
+            >Name</label
+          >
         </div>
 
         <div class="franchisee-form__wrapper">
           <input
             type="tel"
-            id="phone"
-            name="phone"
+            id="franchisee-phone"
+            name="franchisee-phone"
             class="franchisee-form__input"
             autocomplete="off"
             placeholder=" "
             required
           />
-          <label for="phone" class="franchisee-form__label">Phone</label>
+          <label for="franchisee-phone" class="franchisee-form__label"
+            >Phone</label
+          >
         </div>
 
         <div class="franchisee-form__wrapper">
           <input
             type="email"
-            id="email"
-            name="email"
+            id="franchisee-email"
+            name="franchisee-email"
             class="franchisee-form__input"
             autocomplete="off"
             placeholder=" "
             required
           />
-          <label for="email" class="franchisee-form__label">Email</label>
+          <label for="franchisee-email" class="franchisee-form__label"
+            >Email</label
+          >
         </div>
         <div class="franchisee-form__wrapper">
           <textarea
-            name="comment"
-            id="comment"
+            name="franchisee-comment"
+            id="franchisee-comment"
             placeholder=" "
             class="franchisee-form__textarea"
           ></textarea>
-          <label for="comment" class="franchisee-form__label">Comment</label>
+          <label for="franchisee-comment" class="franchisee-form__label"
+            >Comment</label
+          >
         </div>
         <button class="btn btn--standart franchisee-form__btn">Submit</button>
       </form>
