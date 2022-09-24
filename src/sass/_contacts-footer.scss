@@ -33,9 +33,9 @@
 }
 
 .contact-adress {
-  margin-top: 8px;
   @include font(500, 12px, 1.86, 0.04em);
   color: #d6936d;
+  margin-top: 8px;
 }
 
 .mode-data {
@@ -56,9 +56,6 @@
   @include font(500, 12px, 1.86, 0.04em);
   color: #ababab;
   margin-bottom: 8px;
-  
-  
-  
 }
 
 .contact-link {
