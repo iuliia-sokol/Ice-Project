@@ -1,10 +1,8 @@
-// WRAPPER
+// GALLERY REVIEWS WRAPPER
 
 .gallery-reviews-wrapper {
   width: 100%;
   margin: 0 auto;
-  //   padding-top: 118px;
-  //   padding-bottom: 118px;
   background-color: transparent;
   background-image: url('../images/gallery-reviews/bg-gallery-reviews-768-1x-min.jpg');
   background-position: center;
@@ -60,14 +58,12 @@
 // GALLERY
 
 .gallery {
-  // margin-top: -98px;
   &__container {
-    padding: 0 93px;
+    padding: 0 20px;
   }
   &__slider {
-    max-width: 1013px;
-    // position: absolute;
-    transform: translateY(-98px);
+    width: 100%;
+    transform: translateY(-24px);
   }
   &__list {
     display: flex;
@@ -76,7 +72,7 @@
   }
   &__item {
     min-width: 100%;
-    min-height: 422px;
+    min-height: 130px;
     border-radius: 24px;
     background-color: transparent;
     background-position: center;
@@ -105,5 +101,43 @@
   }
   .gallery__item:last-child {
     background-image: url('../images/gallery-reviews/slide-icecream-3-716-2x-min.jpg');
+  }
+}
+@media screen and (min-width: 480px) {
+  .gallery {
+    &__slider {
+      max-width: 440px;
+      transform: translateY(-24px);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    &__container {
+      padding: 0 32px;
+    }
+    &__slider {
+      max-width: 704px;
+      transform: translateY(-164px);
+    }
+    &__item {
+      min-height: 327px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    &__container {
+      padding: 0 93px;
+    }
+    &__slider {
+      max-width: 1013px;
+      transform: translateY(-98px);
+    }
+    &__item {
+      min-width: 100%;
+      min-height: 422px;
+    }
   }
 }
