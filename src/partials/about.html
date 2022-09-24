@@ -36,11 +36,23 @@
                 </p>
                 <p class="about__text about__text--hidden">This is enough to choose ice cream and coffee for any mood!
                 </p>
-                <button class="about-btn btn btn--standart " type="submit">Read more
+                <button class="about-btn btn btn--standart " type="submit" data-modal__open>Read more
                     <svg class="about__icon" width="12" height="12">
                         <use href="./images/icons.svg#header-modal-open-btn" ></use>
                     </svg></button>
             </div>
+        </div>
+    </div>
+    <div class="backdrop" data__modal>
+        <div class="modal">
+            <button type="submit" class="about-close-btn" data-modal__close>
+                <svg class="about-close-btn__icon" width="16" height="16" >
+                    <use href="./images/icons.svg#header-modal-close-btn" ></use>
+                </svg>
+            </button>
+            <p class="modal__title">How it’s made?</p>
+            <iframe class="about__video"  src="https://www.youtube.com/embed/2J7ywGTRbbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="modal__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
         </div>
     </div>
 </section>
