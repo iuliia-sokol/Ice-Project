@@ -1,11 +1,17 @@
 .section__pre-title {
   font-weight: 800;
-  font-size: 30px;
+  font-size: 18px;
   line-height: calc(37 / 30);
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $main-black;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
 }
 
 .products {
@@ -92,6 +98,7 @@
     margin-top: 40px;
     @media screen and (min-width: 1200px) {
       margin-top: 65px;
+      font-size: 16px;
     }
   }
   &__title {
@@ -101,6 +108,13 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $main-black;
+
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+    }
   }
   &__item {
     position: relative;
