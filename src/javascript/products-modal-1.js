@@ -1,8 +1,8 @@
-const openProductModalBtn = document.querySelector('.about-btn');
-const closeProductModalBtn = document.querySelector('.products__button-close');
-const productModal = document.querySelector('.products__backdrop');
-const productModalWindow = document.querySelector('.about-modal');
-const productModalForm = document.querySelector('.products__form-field');
+const openProductModalBtn = document.querySelector('.products-btn-1');
+const closeProductModalBtn = document.querySelector('.products-close-btn-1');
+const productModal = document.querySelector('.products-backdrop-1');
+const productModalWindow = document.querySelector('.products-modal-1');
+const productModalForm = document.querySelector('.products-form-1');
 
 openProductModalBtn.addEventListener('click', function () {
   productModal.classList.remove('is-hidden');
