@@ -1,0 +1,58 @@
+<section class="about section">
+    <div class="container">
+        <p class="about__pretitle">tradition and love</p>
+        <h2 class="about__title section__header">how  it’s  made?</h2>
+        <div class="about-wrap">
+            <div class="about-img-wrap">
+            <picture>
+                <source
+                    srcset="
+                        ./images/about/cow-desk.jpg 1x,
+                        ./images/about/cow-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    />
+                <source
+                    srcset="
+                        ./images/about/cow-tab.jpg 1x,
+                        ./images/about/cow-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    />
+                <source
+                    srcset="
+                        ./images/about/cow-mob.jpg 1x,
+                        ./images/about/cow-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 480px)"
+                />
+                <img class="about__img" src="./images/about/cow-mob-2x.jpg" alt="cow" width="490">
+            </picture>
+            </div>
+            <div class="about-text-wrap">
+                <p class="about__text">Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts.
+                </p>
+                <p class="about__text">We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes. 
+                </p>
+                <p class="about__text about__text--hidden">This is enough to choose ice cream and coffee for any mood!
+                </p>
+                <button class="about-btn btn btn--standart " type="submit" data-modal__open>Read more
+                    <svg class="about__icon" width="12" height="12">
+                        <use href="./images/icons.svg#header-modal-open-btn" ></use>
+                    </svg></button>
+            </div>
+        </div>
+    </div>
+    <div class="about-backdrop is-hidden" data__modal>
+        <div class="about-modal">
+            <button type="submit" class="about-close-btn" data-modal__close>
+                <svg class="about-close-btn__icon" width="16" height="16" >
+                    <use href="./images/icons.svg#header-modal-close-btn" ></use>
+                </svg>
+            </button>
+            <p class="about-modal__title">How it’s made?</p>
+            <iframe class="about__video"  src="https://www.youtube.com/embed/2J7ywGTRbbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="about-modal__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        </div>
+    </div>
+</section>
