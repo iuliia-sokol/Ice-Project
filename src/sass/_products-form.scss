@@ -4,7 +4,6 @@
   animation-delay: 3250ms;
 
   animation-timing-function: ease-out;
-  transition-property: top;
 
   @keyframes ping-pong {
     0% {
@@ -24,7 +23,6 @@
   animation-delay: 2000ms;
 
   animation-timing-function: ease-out;
-  transition-property: transform;
   @content;
 
   @keyframes rotate {
@@ -48,7 +46,6 @@
   animation-delay: 250ms;
 
   animation-timing-function: ease-out;
-  transition-property: opacity;
   animation-fill-mode: backwards;
 
   @keyframes fade-in {

@@ -418,7 +418,6 @@ a,
           animation-delay: 250ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
-  transition-property: opacity;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -451,7 +450,6 @@ a,
           animation-delay: 3250ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
-  transition-property: top;
 }
 @-webkit-keyframes ping-pong {
   0% {
@@ -491,7 +489,6 @@ a,
           animation-delay: 250ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
-  transition-property: opacity;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
   -webkit-animation-delay: 500ms;
@@ -517,7 +514,6 @@ a,
           animation-delay: 250ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
-  transition-property: opacity;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
   -webkit-animation-delay: 750ms;
@@ -549,7 +545,6 @@ a,
           animation-delay: 2000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
-  transition-property: transform;
   animation-delay: 2000ms;
 }
 @-webkit-keyframes rotate {
@@ -589,7 +584,6 @@ a,
           animation-delay: 2000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
-  transition-property: transform;
   -webkit-animation-delay: 2250ms;
           animation-delay: 2250ms;
 }
@@ -616,7 +610,6 @@ a,
           animation-delay: 2000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
-  transition-property: transform;
   -webkit-animation-delay: 2500ms;
           animation-delay: 2500ms;
 }
@@ -643,7 +636,6 @@ a,
           animation-delay: 2000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
-  transition-property: transform;
   -webkit-animation-delay: 2750ms;
           animation-delay: 2750ms;
 }
@@ -683,7 +675,6 @@ a,
           animation-delay: 2000ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
-  transition-property: transform;
 }
 @keyframes rotate {
   0% {
@@ -712,7 +703,6 @@ a,
           animation-delay: 250ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
-  transition-property: opacity;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
   -webkit-animation-delay: 1s;
@@ -739,7 +729,6 @@ a,
           animation-delay: 250ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
-  transition-property: opacity;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
   -webkit-animation-delay: 1s;
@@ -774,7 +763,6 @@ a,
           animation-delay: 250ms;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
-  transition-property: opacity;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
   -webkit-animation-delay: 1s;
