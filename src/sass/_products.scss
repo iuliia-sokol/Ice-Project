@@ -1,0 +1,203 @@
+.section__pre-title {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: calc(37 / 30);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $main-black;
+}
+
+.products ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.products > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products {
+  position: relative;
+  background-image: url('../images/products/bg-products-tab.jpg');
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/products/bg-products-tab@2x.jpg');
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/products/bg-products-desk.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/products/bg-products-desk@2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/products/bg-products-desk.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/products/bg-products-desk@2x.jpg');
+    }
+  }
+
+  &__list {
+    margin-top: 148px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 16px;
+      margin-top: 200px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      gap: 32px;
+      margin-top: 303px;
+    }
+  }
+  &__image {
+    position: absolute;
+    top: -211px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    @media screen and (min-width: 1200px) {
+      top: -317px;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 176%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $main-black;
+    margin-top: 40px;
+  }
+  &__title {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $main-black;
+  }
+  &__item {
+    position: relative;
+    padding: 123px 0 10px 0;
+    margin-bottom: 164px;
+    max-width: 280px;
+    height: 420px;
+    background-color: $bg-olive;
+    border-radius: 24px;
+
+    &.ice-coffee {
+      background-color: $bg-yellow;
+      &::before {
+        background-image: linear-gradient(
+            0deg,
+            rgba(248, 210, 78, 0.7),
+            rgba(248, 210, 78, 0.7)
+          ),
+          #d9d9d9;
+        box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+      }
+    }
+
+    &.milkshakes {
+      background-color: $bg-orange;
+      &::before {
+        background-image: linear-gradient(
+            0deg,
+            rgba(213, 117, 63, 0.7),
+            rgba(213, 117, 63, 0.7)
+          ),
+          #d9d9d9;
+        box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+
+      position: absolute;
+      top: -200px;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      background-image: linear-gradient(
+          0deg,
+          rgba(156, 190, 143, 0.7),
+          rgba(156, 190, 143, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+      @media screen and (min-width: 1200px) {
+        width: 300px;
+        height: 300px;
+        top: -300px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 228px;
+      height: 428px;
+      padding: 107px 0 10px 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 370px;
+      height: 535px;
+      padding: 166px 0 10px 0;
+    }
+  }
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 0 40px;
+
+    @media screen and (min-width: 768px) {
+      padding: 0 26px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 0 64px;
+    }
+  }
+  &__link {
+    flex-grow: 2;
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: flex-end;
+
+    &:hover .products__icon {
+      transform: scale(1.1);
+    }
+
+    &:focus .products__icon {
+      transform: scale(1.1);
+      stroke: $main-black;
+      stroke-width: 1px;
+    }
+  }
+  &__icon {
+    width: 40px;
+    height: 15px;
+    fill: $main-black;
+  }
+}
