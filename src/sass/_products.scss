@@ -54,9 +54,16 @@
 
   &__list {
     margin-top: 148px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     @media screen and (min-width: 768px) {
       display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
       gap: 16px;
       margin-top: 200px;
     }
