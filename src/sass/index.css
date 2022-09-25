@@ -1,18 +1,19 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
-.footer-map__close-btn, .footer-franchisee__close-btn {
+.footer-map__close-btn,
+.footer-franchisee__close-btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #131313;
   line-height: 1.76;
 }
 
 .cursor {
-  cursor: url("../images/cursor.png"), auto;
+  cursor: url('../images/cursor.png'), auto;
 }
 
 h1,
@@ -35,7 +36,7 @@ ul {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -67,7 +68,7 @@ a,
 }
 
 .btn {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   text-align: center;
   border-radius: 10px;
   padding: 12px 34px;
@@ -134,7 +135,7 @@ a,
 }
 
 .section__header {
-  font-family: "Seymour One";
+  font-family: 'Seymour One';
   font-size: 30px;
   line-height: 1.27;
   text-align: center;
@@ -178,32 +179,41 @@ a,
 
 .products {
   position: relative;
-  background-image: url("../images/products/bg-products-tab.jpg");
+  background-image: url('../images/products/bg-products-tab.jpg');
   background-size: contain;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .products {
-    background-image: url("../images/products/bg-products-tab@2x.jpg");
+    background-image: url('../images/products/bg-products-tab@2x.jpg');
   }
 }
 @media screen and (min-width: 768px) {
   .products {
-    background-image: url("../images/products/bg-products-desk.jpg");
+    background-image: url('../images/products/bg-products-desk.jpg');
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .products {
-    background-image: url("../images/products/bg-products-desk@2x.jpg");
+    background-image: url('../images/products/bg-products-desk@2x.jpg');
   }
 }
 @media screen and (min-width: 1200px) {
   .products {
-    background-image: url("../images/products/bg-products-desk.jpg");
+    background-image: url('../images/products/bg-products-desk.jpg');
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .products {
-    background-image: url("../images/products/bg-products-desk@2x.jpg");
+    background-image: url('../images/products/bg-products-desk@2x.jpg');
   }
 }
 .products__list {
@@ -262,18 +272,28 @@ a,
   background-color: #efd478;
 }
 .products__item.ice-coffee::before {
-  background-image: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+  background-image: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
 .products__item.milkshakes {
   background-color: #d6936d;
 }
 .products__item.milkshakes::before {
-  background-image: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
+  background-image: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
 .products__item::before {
-  content: "";
+  content: '';
   display: block;
   width: 200px;
   height: 200px;
@@ -282,7 +302,12 @@ a,
   top: -200px;
   left: 50%;
   transform: translate(-50%, 50%);
-  background-image: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  background-image: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 }
 @media screen and (min-width: 1200px) {
@@ -411,15 +436,15 @@ a,
   color: #131313;
   text-align: center;
   -webkit-animation-name: fade-in;
-          animation-name: fade-in;
+  animation-name: fade-in;
   -webkit-animation-duration: 500ms;
-          animation-duration: 500ms;
+  animation-duration: 500ms;
   -webkit-animation-delay: 250ms;
-          animation-delay: 250ms;
+  animation-delay: 250ms;
   -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 @-webkit-keyframes fade-in {
   0% {
@@ -443,13 +468,13 @@ a,
   left: 0;
   top: -10px;
   -webkit-animation-name: ping-pong;
-          animation-name: ping-pong;
+  animation-name: ping-pong;
   -webkit-animation-duration: 500ms;
-          animation-duration: 500ms;
+  animation-duration: 500ms;
   -webkit-animation-delay: 3250ms;
-          animation-delay: 3250ms;
+  animation-delay: 3250ms;
   -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
 }
 @-webkit-keyframes ping-pong {
   0% {
@@ -479,20 +504,25 @@ a,
   height: 130px;
   border-radius: 50%;
   margin-top: 32px;
-  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
   -webkit-animation-name: fade-in;
-          animation-name: fade-in;
+  animation-name: fade-in;
   -webkit-animation-duration: 500ms;
-          animation-duration: 500ms;
+  animation-duration: 500ms;
   -webkit-animation-delay: 250ms;
-          animation-delay: 250ms;
+  animation-delay: 250ms;
   -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
   -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  animation-delay: 500ms;
 }
 @keyframes fade-in {
   0% {
@@ -507,17 +537,17 @@ a,
   gap: 10px;
   margin-top: 24px;
   -webkit-animation-name: fade-in;
-          animation-name: fade-in;
+  animation-name: fade-in;
   -webkit-animation-duration: 500ms;
-          animation-duration: 500ms;
+  animation-duration: 500ms;
   -webkit-animation-delay: 250ms;
-          animation-delay: 250ms;
+  animation-delay: 250ms;
   -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
   -webkit-animation-delay: 750ms;
-          animation-delay: 750ms;
+  animation-delay: 750ms;
 }
 @keyframes fade-in {
   0% {
@@ -538,13 +568,13 @@ a,
 }
 .products__form-mcrlmnt-item:nth-child(1) .products__form-mcrlmnt-text.circle {
   -webkit-animation-name: rotate;
-          animation-name: rotate;
+  animation-name: rotate;
   -webkit-animation-duration: 500ms;
-          animation-duration: 500ms;
+  animation-duration: 500ms;
   -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  animation-delay: 2000ms;
   -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   animation-delay: 2000ms;
 }
 @-webkit-keyframes rotate {
@@ -577,15 +607,15 @@ a,
 }
 .products__form-mcrlmnt-item:nth-child(2) .products__form-mcrlmnt-text.circle {
   -webkit-animation-name: rotate;
-          animation-name: rotate;
+  animation-name: rotate;
   -webkit-animation-duration: 500ms;
-          animation-duration: 500ms;
+  animation-duration: 500ms;
   -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  animation-delay: 2000ms;
   -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   -webkit-animation-delay: 2250ms;
-          animation-delay: 2250ms;
+  animation-delay: 2250ms;
 }
 @keyframes rotate {
   0% {
@@ -603,15 +633,15 @@ a,
 }
 .products__form-mcrlmnt-item:nth-child(3) .products__form-mcrlmnt-text.circle {
   -webkit-animation-name: rotate;
-          animation-name: rotate;
+  animation-name: rotate;
   -webkit-animation-duration: 500ms;
-          animation-duration: 500ms;
+  animation-duration: 500ms;
   -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  animation-delay: 2000ms;
   -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   -webkit-animation-delay: 2500ms;
-          animation-delay: 2500ms;
+  animation-delay: 2500ms;
 }
 @keyframes rotate {
   0% {
@@ -629,15 +659,15 @@ a,
 }
 .products__form-mcrlmnt-item:nth-child(4) .products__form-mcrlmnt-text.circle {
   -webkit-animation-name: rotate;
-          animation-name: rotate;
+  animation-name: rotate;
   -webkit-animation-duration: 500ms;
-          animation-duration: 500ms;
+  animation-duration: 500ms;
   -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  animation-delay: 2000ms;
   -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   -webkit-animation-delay: 2750ms;
-          animation-delay: 2750ms;
+  animation-delay: 2750ms;
 }
 @keyframes rotate {
   0% {
@@ -668,13 +698,13 @@ a,
   align-items: center;
   justify-content: center;
   -webkit-animation-name: rotate;
-          animation-name: rotate;
+  animation-name: rotate;
   -webkit-animation-duration: 500ms;
-          animation-duration: 500ms;
+  animation-duration: 500ms;
   -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  animation-delay: 2000ms;
   -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
 }
 @keyframes rotate {
   0% {
@@ -696,17 +726,17 @@ a,
   font-size: 20px;
   line-height: 1.4;
   -webkit-animation-name: fade-in;
-          animation-name: fade-in;
+  animation-name: fade-in;
   -webkit-animation-duration: 500ms;
-          animation-duration: 500ms;
+  animation-duration: 500ms;
   -webkit-animation-delay: 250ms;
-          animation-delay: 250ms;
+  animation-delay: 250ms;
   -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
   -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
 @keyframes fade-in {
   0% {
@@ -722,17 +752,17 @@ a,
 .products__description-list {
   margin-top: 24px;
   -webkit-animation-name: fade-in;
-          animation-name: fade-in;
+  animation-name: fade-in;
   -webkit-animation-duration: 500ms;
-          animation-duration: 500ms;
+  animation-duration: 500ms;
   -webkit-animation-delay: 250ms;
-          animation-delay: 250ms;
+  animation-delay: 250ms;
   -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
   -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
 @keyframes fade-in {
   0% {
@@ -756,17 +786,17 @@ a,
   align-items: center;
   max-width: 368px;
   -webkit-animation-name: fade-in;
-          animation-name: fade-in;
+  animation-name: fade-in;
   -webkit-animation-duration: 500ms;
-          animation-duration: 500ms;
+  animation-duration: 500ms;
   -webkit-animation-delay: 250ms;
-          animation-delay: 250ms;
+  animation-delay: 250ms;
   -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
   -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
 @keyframes fade-in {
   0% {
@@ -829,40 +859,49 @@ a,
   width: 100%;
   margin: 0 auto;
   background-color: transparent;
-  background-image: url("../images/gallery-reviews/bg-gallery-reviews-768-1x-min.jpg");
+  background-image: url('../images/gallery-reviews/bg-gallery-reviews-768-1x-min.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .gallery-reviews-wrapper {
-    background-image: url("../images/gallery-reviews/bg-gallery-reviews-768-2x-min.jpg");
+    background-image: url('../images/gallery-reviews/bg-gallery-reviews-768-2x-min.jpg');
     background-position: center;
   }
 }
 @media screen and (min-width: 768px) {
   .gallery-reviews-wrapper {
     min-width: 768px;
-    background-image: url("../images/gallery-reviews/bg-gallery-reviews-1200-1x-min.jpg");
+    background-image: url('../images/gallery-reviews/bg-gallery-reviews-1200-1x-min.jpg');
   }
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .gallery-reviews-wrapper {
-    background-image: url("../images/gallery-reviews/bg-gallery-reviews-1200-2x-min.jpg");
+    background-image: url('../images/gallery-reviews/bg-gallery-reviews-1200-2x-min.jpg');
   }
 }
 @media screen and (min-width: 1200px) {
   .gallery-reviews-wrapper {
     min-width: 1200px;
-    background-image: url("../images/gallery-reviews/bg-gallery-reviews-1920-1x-min.jpg");
+    background-image: url('../images/gallery-reviews/bg-gallery-reviews-1920-1x-min.jpg');
     max-width: 1920px;
   }
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .gallery-reviews-wrapper {
-    background-image: url("../images/gallery-reviews/bg-gallery-reviews-1920-2x-min.jpg");
+    background-image: url('../images/gallery-reviews/bg-gallery-reviews-1920-2x-min.jpg');
   }
 }
 .emulation {
@@ -893,26 +932,29 @@ a,
 }
 
 .gallery__item:first-child {
-  background-image: url("../images/gallery-reviews/slide-icecream-1-1013-1x-min.jpg");
+  background-image: url('../images/gallery-reviews/slide-icecream-1-1013-1x-min.jpg');
 }
 
 .gallery__item:nth-child(2) {
-  background-image: url("../images/gallery-reviews/slide-icecream-2-636-1x-min.jpg");
+  background-image: url('../images/gallery-reviews/slide-icecream-2-636-1x-min.jpg');
 }
 
 .gallery__item:last-child {
-  background-image: url("../images/gallery-reviews/slide-icecream-3-716-1x-min.jpg");
+  background-image: url('../images/gallery-reviews/slide-icecream-3-716-1x-min.jpg');
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .gallery__item:first-child {
-    background-image: url("../images/gallery-reviews/slide-icecream-1-1013-2x-min.jpg");
+    background-image: url('../images/gallery-reviews/slide-icecream-1-1013-2x-min.jpg');
   }
   .gallery__item:nth-child(2) {
-    background-image: url("../images/gallery-reviews/slide-icecream-2-636-2x-min.jpg");
+    background-image: url('../images/gallery-reviews/slide-icecream-2-636-2x-min.jpg');
   }
   .gallery__item:last-child {
-    background-image: url("../images/gallery-reviews/slide-icecream-3-716-2x-min.jpg");
+    background-image: url('../images/gallery-reviews/slide-icecream-3-716-2x-min.jpg');
   }
 }
 @media screen and (min-width: 480px) {
@@ -968,7 +1010,7 @@ a,
   background-color: transparent;
 }
 .customers-reviews__item::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -32px;
   left: 50%;
@@ -981,25 +1023,25 @@ a,
 }
 .customers-reviews__item:nth-child(1)::before {
   background-color: #84a178;
-  background-image: url("../images/gallery-reviews/slide-photo-1-85-1x-min.png");
+  background-image: url('../images/gallery-reviews/slide-photo-1-85-1x-min.png');
   background-position: center;
   background-size: contain;
 }
 .customers-reviews__item:nth-child(2)::before {
   background-color: #84a178;
-  background-image: url("../images/gallery-reviews/slide-photo-2-85-1x-min.png");
+  background-image: url('../images/gallery-reviews/slide-photo-2-85-1x-min.png');
   background-position: center;
   background-size: contain;
 }
 .customers-reviews__item:nth-child(3)::before {
   background-color: #84a178;
-  background-image: url("../images/gallery-reviews/slide-photo-3-85-1x-min.png");
+  background-image: url('../images/gallery-reviews/slide-photo-3-85-1x-min.png');
   background-position: center;
   background-size: contain;
 }
 .customers-reviews__item:nth-child(4)::before {
   background-color: #84a178;
-  background-image: url("../images/gallery-reviews/slide-photo-4-85-1x-min.png");
+  background-image: url('../images/gallery-reviews/slide-photo-4-85-1x-min.png');
   background-position: center;
   background-size: contain;
 }
@@ -1024,18 +1066,21 @@ a,
   color: #131313;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .customers-reviews__item:nth-child(1)::before {
-    background-image: url("../images/gallery-reviews/slide-photo-1-85-2x-min.png");
+    background-image: url('../images/gallery-reviews/slide-photo-1-85-2x-min.png');
   }
   .customers-reviews__item:nth-child(2)::before {
-    background-image: url("../images/gallery-reviews/slide-photo-2-85-2x-min.png");
+    background-image: url('../images/gallery-reviews/slide-photo-2-85-2x-min.png');
   }
   .customers-reviews__item:nth-child(3)::before {
-    background-image: url("../images/gallery-reviews/slide-photo-3-85-2x-min.png");
+    background-image: url('../images/gallery-reviews/slide-photo-3-85-2x-min.png');
   }
   .customers-reviews__item:nth-child(4)::before {
-    background-image: url("../images/gallery-reviews/slide-photo-4-85-2x-min.png");
+    background-image: url('../images/gallery-reviews/slide-photo-4-85-2x-min.png');
   }
 }
 .swiper-button-prev,
@@ -1051,7 +1096,7 @@ a,
   align-items: center;
   justify-content: center;
   -moz-column-gap: 18px;
-       column-gap: 18px;
+  column-gap: 18px;
   z-index: 10;
 }
 
@@ -1107,7 +1152,11 @@ a,
     border-radius: 24px;
     border: none;
     background-color: transparent;
-    background-image: linear-gradient(93.32deg, rgba(132, 161, 120, 0.5) -10.68%, rgba(252, 252, 252, 0.2) 59.53%);
+    background-image: linear-gradient(
+      93.32deg,
+      rgba(132, 161, 120, 0.5) -10.68%,
+      rgba(252, 252, 252, 0.2) 59.53%
+    );
     transform: translateX(-50%);
   }
   .swiper-button-next {
@@ -1121,11 +1170,15 @@ a,
     border-radius: 24px;
     border: none;
     background-color: transparent;
-    background-image: linear-gradient(93.32deg, rgba(132, 161, 120, 0.5) -10.68%, rgba(252, 252, 252, 0.2) 59.53%);
+    background-image: linear-gradient(
+      93.32deg,
+      rgba(132, 161, 120, 0.5) -10.68%,
+      rgba(252, 252, 252, 0.2) 59.53%
+    );
     transform: translateX(50%) rotate(180deg);
   }
   .btn-prev-icon,
-.btn-next-icon {
+  .btn-next-icon {
     display: block;
     position: absolute;
     top: 50%;
@@ -1136,9 +1189,9 @@ a,
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .swiper-button-prev:hover .btn-prev-icon,
-.swiper-button-prev:focus .btn-prev-icon,
-.swiper-button-next:hover .btn-next-icon,
-.swiper-button-next:focus .btn-next-icon {
+  .swiper-button-prev:focus .btn-prev-icon,
+  .swiper-button-next:hover .btn-next-icon,
+  .swiper-button-next:focus .btn-next-icon {
     transform: translate(25%, -50%) rotate(180deg) scale(1.5);
   }
 }
@@ -1154,11 +1207,11 @@ a,
     font-size: 16px;
   }
   .swiper-button-prev,
-.swiper-button-next {
+  .swiper-button-next {
     width: 88px;
   }
   .btn-prev-icon,
-.btn-next-icon {
+  .btn-next-icon {
     width: 40px;
   }
 }
@@ -1216,14 +1269,15 @@ a,
   transition-property: fill, transform;
   z-index: 15;
 }
-.footer-franchisee__close-btn:hover .footer-franchisee__close-icon, .footer-franchisee__close-btn:focus .footer-franchisee__close-icon {
+.footer-franchisee__close-btn:hover .footer-franchisee__close-icon,
+.footer-franchisee__close-btn:focus .footer-franchisee__close-icon {
   fill: #0a8817;
   transform: scale(1.2);
 }
 .footer-franchisee__header {
   display: inline-block;
   max-width: 221px;
-  font-family: "Seymour One";
+  font-family: 'Seymour One';
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -1287,10 +1341,14 @@ a,
   font-size: 12px;
   line-height: 1.4;
 }
-.franchisee-form__input:focus + .franchisee-form__label, .franchisee-form__textarea:focus + .franchisee-form__label {
+.franchisee-form__input:focus + .franchisee-form__label,
+.franchisee-form__textarea:focus + .franchisee-form__label {
   display: none;
 }
-.franchisee-form__input:focus, .franchisee-form__textarea:focus, .franchisee-form__input:hover, .franchisee-form__textarea:hover {
+.franchisee-form__input:focus,
+.franchisee-form__textarea:focus,
+.franchisee-form__input:hover,
+.franchisee-form__textarea:hover {
   border: 2px solid #0a8817;
 }
 .franchisee-form__btn {
@@ -1404,12 +1462,13 @@ a,
   transition-property: fill, transform;
   z-index: 15;
 }
-.footer-franchisee__close-btn:hover .footer-map__close-icon, .footer-franchisee__close-btn:focus .footer-map__close-icon {
+.footer-franchisee__close-btn:hover .footer-map__close-icon,
+.footer-franchisee__close-btn:focus .footer-map__close-icon {
   fill: #0a8817;
   transform: scale(1.2);
 }
 .footer-map__header {
-  font-family: "Seymour One";
+  font-family: 'Seymour One';
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -1465,4 +1524,4 @@ a,
     font-size: 14px;
     line-height: 1.214;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
