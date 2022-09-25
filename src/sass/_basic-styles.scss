@@ -81,6 +81,7 @@ a,
 
 .btn--standart {
   background-color: $accent-yellow;
+  border: none;
   @include transition(color, background-color);
 
   &:hover {
