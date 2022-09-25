@@ -157,3 +157,13 @@ a,
     line-height: 1.25;
   }
 }
+
+.animate__pulse {
+  animation-iteration-count: infinite;
+  animation-duration: 4000ms;
+}
+
+.animate__tada {
+  animation-iteration-count: infinite;
+  animation-duration: 4000ms;
+}
