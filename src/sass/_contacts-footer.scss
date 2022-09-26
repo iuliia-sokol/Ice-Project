@@ -70,7 +70,9 @@
   }
 }
 .contact-adress {
-  // position: relative;
+  // transition-property: text-decoration;
+  // transition-delay: 500ms;
+  // transition-timing-function: ease-out;
 
   @include font(500, 12px, 1.86, 0.04em);
   color: $bg-orange;
@@ -86,17 +88,6 @@
     text-decoration: underline;
   }
 }
-
-// .contact-adress::after {
-//   content: '';
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   height: 1px;
-//   width: 100%;
-//   background-color: $bg-orange;
-//   display: block;
-// }
 
 .mode-data {
   margin-top: 25px;
@@ -294,8 +285,8 @@
   display: flex;
   border-radius: 50%;
 
-  animation-duration: 500ms;
-  animation-timing-function: ease-out;
+  transition-duration: 250ms;
+  transition-timing-function: ease-out;
   transition-property: transform;
 
   &:hover,
