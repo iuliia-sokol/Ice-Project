@@ -75,3 +75,50 @@
   }
   @content;
 }
+@mixin animation-bounce {
+  animation-name: bounce;
+  animation-duration: 500ms;
+  animation-timing-function: ease-out;
+  @keyframes bounce {
+    0% {
+      transform: scaleX(1);
+    }
+    25% {
+      transform: scaleX(1.35);
+    }
+    50% {
+      transform: scaleX(1);
+    }
+    75% {
+      transform: scaleX(1.2);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+}
+@mixin animation-shake {
+  animation-name: shake;
+  animation-duration: 500ms;
+  animation-timing-function: ease-out;
+  @keyframes shake {
+    0% {
+      transform: translateX(0px);
+    }
+    32% {
+      transform: translateX(5px);
+    }
+    48% {
+      transform: translateX(-5px);
+    }
+    64% {
+      transform: translateX(3px);
+    }
+    80% {
+      transform: translateX(-3px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+}

@@ -297,6 +297,12 @@
 
   color: $main-black;
   margin-top: 24px;
+
+  &:hover,
+  :focus {
+    @include animation-shake;
+  }
+
   @media screen and (min-width: 768px) {
     margin-top: 32px;
     width: 121px;
