@@ -1,3 +1,26 @@
+@mixin animation-bounce {
+  animation-name: bounce;
+  animation-duration: 500ms;
+  animation-timing-function: ease-out;
+  @keyframes bounce {
+    0% {
+      transform: scaleX(1);
+    }
+    25% {
+      transform: scaleX(1.35);
+    }
+    50% {
+      transform: scaleX(1);
+    }
+    75% {
+      transform: scaleX(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
 .section__pre-title {
   font-weight: 800;
   font-size: 18px;
@@ -222,11 +245,11 @@
     border: none;
 
     &:hover .products__icon {
-      transform: scale(1.2);
+      @include animation-bounce;
     }
 
     &:focus .products__icon {
-      transform: scale(1.2);
+      @include animation-bounce;
       stroke: $main-black;
       stroke-width: 1px;
     }
