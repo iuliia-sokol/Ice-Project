@@ -73,6 +73,10 @@
       font-weight: 700;
       font-size: 16px;
       line-height: 1.25;
+
+      transition-property: color;
+      transition-duration: 500ms;
+
       &:hover,
       &:focus {
         color: $accent-yellow;
@@ -94,6 +98,8 @@
     padding: 12px 34px;
     border: none;
     background-color: $accent-yellow;
+    transition-property: background-color;
+    transition-duration: 500ms;
   }
   &:hover {
     background-color: $accent-green;
@@ -340,6 +346,9 @@
     border-radius: 8px;
     @media screen and (min-width: 1200px) {
       border-radius: 10px;
+
+      transition-property: border-color, color;
+      transition-duration: 500ms;
     }
     &:hover {
       border-color: $accent-green;
@@ -361,6 +370,7 @@
   text-decoration-line: underline;
   color: $accent-yellow;
   border: none;
+
   &:hover {
     color: $accent-green;
   }
@@ -423,6 +433,7 @@
     &__image {
       width: 152px;
       height: auto;
+
       @media screen and (min-width: 1200px) {
         width: 225px;
       }
