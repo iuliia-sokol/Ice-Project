@@ -166,3 +166,13 @@ a,
   animation-iteration-count: infinite;
   animation-duration: 4000ms;
 }
+
+.animation-ping-pong {
+  @include animation-ping-pong;
+}
+.animation-fade-in {
+  @include animation-fade-in;
+}
+.animation-rotate {
+  @include animation-rotate;
+}
