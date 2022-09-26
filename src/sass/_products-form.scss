@@ -179,6 +179,10 @@
   &__form-mcrlmnt-text {
     font-size: 10px;
     line-height: 28px;
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+    }
+
     &.circle {
       width: 43px;
       height: 43px;
@@ -295,5 +299,6 @@
   margin-top: 24px;
   @media screen and (min-width: 768px) {
     margin-top: 32px;
+    width: 121px;
   }
 }
