@@ -46,6 +46,16 @@
     z-index: 10;
     background-color: transparent;
     border: none;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform;
+    transform: rotate(-90deg);
+
+    &:hover,
+    :focus {
+      transform: scale(1.15);
+      transform: rotate(1turn);
+    }
   }
   &__close-icon {
     width: 16px;
@@ -53,11 +63,11 @@
     @include transition(fill, transform);
     z-index: 15;
 
-    .footer-franchisee__close-btn:hover &,
-    .footer-franchisee__close-btn:focus & {
-      fill: $accent-green;
-      transform: scale(1.2);
-    }
+    // .footer-franchisee__close-btn:hover &,
+    // .footer-franchisee__close-btn:focus & {
+    //   fill: $accent-green;
+    //   transform: scale(1.2);
+    // }
   }
 
   &__header {
@@ -105,7 +115,12 @@
     border: 1px solid $main-bg-green;
     border-radius: 10px;
     outline: none;
+    font-size: 12px;
+      @media screen and (min-width: 768px) {
     font-size: 14px;
+  }
+
+
     @include transition(border);
   }
   &__textarea {
@@ -116,9 +131,14 @@
     border: 1px solid $main-bg-green;
     border-radius: 10px;
     outline: none;
-    font-size: 14px;
-    overflow: scroll;
+    font-size: 12px;
+    // overflow: scroll;
     resize: none;
+      @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+
     @include transition(border);
   }
   &__label {
@@ -143,6 +163,10 @@
     font-size: 12px;
     line-height: 1.25;
     align-self: center;
+    &:hover,
+    :focus {
+      @include animation-shake;
+    }
   }
 }
 
