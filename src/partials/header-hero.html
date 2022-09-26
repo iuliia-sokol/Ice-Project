@@ -1,0 +1,207 @@
+<header class="header">
+	<div class="container">
+		<a href="./index.html" class="header__logo" rel="noopener noreferrer nofollow">
+			<picture>
+				<source 
+                srcset="./images/header-hero/logo-desk.png    1x,
+            ./images/header-hero/logo-desk@2x.png 2x" media="(min-width: 1200px)" />
+				<source srcset="./images/header-hero/logo-tab.png    1x,
+            ./images/header-hero/logo-tab@2x.png 2x" media="(min-width: 768px)" />
+				<source 
+                srcset="./images/header-hero/logo-mob.png    1x,
+            ./images/header-hero/logo-mob@2x.png 2x" media="(max-width: 767px)" />
+				<img 
+                src="./images/header-hero/logo-desk.png" class="header__logo-icon" alt="Logo" width="60" />
+			</picture>
+		</a>
+		<button type="button" class="header-menu__toggle-open">
+            <svg width="32" height="32"
+				aria-label="Mobile menu toggle">
+				<use class="header-menu__icon-open" href="./images/icons.svg#header-menu-open-btn"></use>
+			</svg>
+        </button>
+		<nav class="header-nav">
+			<ul class="header-nav__list">
+				<li class="header-nav__item">
+					<a href="./index.html" class="header-nav__link" rel="noopener noreferrer nofollow">Home</a>
+				</li>
+				<li class="header-nav__item">
+					<a href="#about" class="header-nav__link">How it’s made?</a>
+				</li>
+				<li class="header-nav__item">
+					<a href="#products" class="header-nav__link">Our products</a>
+				</li>
+				<li class="header-nav__item">
+					<a href="#contact" class="header-nav__link">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="header-wrap__buy-btn">
+			<button class="header__buy-btn btn" type="button" data-header-modal-open>
+				Buy now
+                <svg class="buy-btn__icon" width="12" height="12">
+					<use href="./images/icons.svg#header-modal-open-btn" />
+				</svg>
+			</button>
+		</div>
+		</picture>
+	</div>
+	<div class="header-menu is-hidden">
+		<div class="header-menu__container">
+			<a href="./index.html" class="header-menu__logo" rel="noopener noreferrer nofollow">
+				<picture>
+					<source 
+                    srcset="./images/header-hero/logo-tab.png    1x,
+                                ./images/header-hero/logo-tab@2x.png 2x" media="(min-width: 768px)" />
+					<source 
+                    srcset="./images/header-hero/logo-mob.png    1x,
+                                ./images/header-hero/logo-mob@2x.png 2x" media="(max-width: 767px)" />
+					<img src="./images/header-hero/logo-desk.png" class="header-menu__logo-icon" alt="Logo"
+						width="60" />
+				</picture>
+			</a>
+			<button type="button" class="header-menu__toggle-close">
+                <svg width="32" height="32"
+					aria-label="Mobile menu toggle">
+					<use class="header-menu__icon-close" href="./images/icons.svg#header-menu-close-btn"></use>
+				</svg>
+            </button>
+			<nav class="header-menu__nav">
+				<ul class="header-menu__nav-list">
+					<li class="header-menu__nav-item">
+						<a href="./index.html" class="header-menu__nav-link" rel="noopener noreferrer nofollow">Home</a>
+					</li>
+					<li class="header-menu__nav-item">
+						<a href="#about" class="header-menu__nav-link">How it’s made?</a>
+					</li>
+					<li class="header-menu__nav-item">
+						<a href="#products" class="header-menu__nav-link">Our products</a>
+					</li>
+					<li class="header-menu__nav-item">
+						<a href="#contact" class="header-menu__nav-link">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<button class="header-menu__buy-btn btn" type="button" data-header-mobile-open>
+				Buy now
+                <svg class="buy-btn__icon" width="12" height="12">
+					<use href="./images/icons.svg#header-modal-open-btn" />
+				</svg>
+			</button>
+		</div>
+	</div>
+</header>
+<section class="hero">
+	<div class="container">
+		<h1 class="hero__title title">
+			Ice cream <br />made with<br />
+			<span>passion</span>
+		</h1>
+		<ul class="hero-btn__list">
+			<li class="hero-btn__item">
+				<a href="#products" class="hero-btn__link">Products</a>
+			</li>
+			<li class="hero-btn__item">
+				<a href="#about" class="hero-btn__link">How it’s made?</a>
+			</li>
+		</ul>
+		<ul class="sale-places__list">
+			<li class="sale-places__item">
+				<p class="sale-places__number">16</p>
+				<p class="sale-places__name">cafes</p>
+			</li>
+			<li class="sale-places__item">
+				<p class="sale-places__number">23</p>
+				<p class="sale-places__name">food trucks</p>
+			</li>
+		</ul>
+		<div class="hero-description">
+			<picture>
+				<source srcset="./images/header-hero/header-small-ice-cream-desk.png    1x,
+            ./images/header-hero/header-small-ice-cream-desk@2x.png 2x" media="(min-width: 1200px)" />
+				<source srcset="./images/header-hero/header-small-ice-cream-tab.png    1x,
+            ./images/header-hero/header-small-ice-cream-tab@2x.png 2x" media="(max-width: 1199px)" />
+				<img 
+                src="./images/header-hero/header-small-ice-cream-desk.png" class="hero-description__image"
+					alt="Several round ice creams on a plate" width="225" />
+			</picture>
+			<div class="hero-description__box">
+				<p class="hero-description__text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					tempor incididunt ut labore et
+				</p>
+				<a class="hero-description__link" href="#" rel="noopener noreferrer nofollow">
+                    <svg
+						class="hero-description__icon" width="40" height="15">
+						<use href="./images/icons.svg#header-arrow"></use>
+					</svg>
+                </a>
+			</div>
+		</div>
+		<picture>
+			<source srcset="./images/header-hero/header-big-ice-cream-desk.png    1x,
+                      ./images/header-hero/header-big-ice-cream-desk@2x.png 2x" media="(min-width: 1200px)" />
+			<source srcset="./images/header-hero/header-big-ice-cream-tab.png    1x,
+                      ./images/header-hero/header-big-ice-cream-tab@2x.png 2x" media="(min-width: 768px)" />
+			<source srcset="./images/header-hero/header-big-ice-cream-mob.png    1x,
+                      ./images/header-hero/header-big-ice-cream-mob@2x.png 2x" media="(max-width: 767px)" />
+			<img src="./images/header-hero/header-big-ice-cream-desk.png" class="hero__image"
+				alt="A large ice cream cone" width="484" />
+		</picture>
+
+	</div>
+</section>
+<div data-header-modal class="header__backdrop is-hidden">
+	<div class="header-modal">
+		<button data-header-modal-close type="button" class="header-modal__close-button">
+			<svg class="header-modal__close-icon" width="16" height="16">
+				<use href="./images/icons.svg#header-modal-close-btn"></use>
+			</svg>
+		</button>
+		<b class="header-modal__title">Buy now</b>
+		<ul class="header-modal__list">
+			<li class="header-modal__item">
+				<div class="header-modal__circle">
+					<div class="header-modal__thumb">
+						<img src="./images/header-hero/header-modal-ice-cream-1.jpg" 
+                        
+                        srcset="./images/header-hero/header-modal-ice-cream-1.jpg 1x, ./images/header-hero/header-modal-ice-cream-1@2x.jpg 2x" 
+                                alt="Ice cream"
+							class="header-modal__image" width="132">
+					</div>
+				</div>
+				<p class="header-modal__text">Ice cream</p>
+			</li>
+			<li class="header-modal__item">
+				<div class="header-modal__circle">
+					<div class="header-modal__thumb">
+						<img src="./images/header-hero/header-modal-ice-cream-1.jpg" 
+                        srcset="./images/header-hero/header-modal-ice-cream-1.jpg 1x,
+                                ./images/header-hero/header-modal-ice-cream-1@2x.jpg 2x" 
+                                alt="Ice cream"
+							class="header-modal__image" width="132">
+					</div>
+				</div>
+				<p class="header-modal__text">Ice coffee</p>
+			</li>
+			<li class="header-modal__item">
+				<div class="header-modal__circle">
+					<div class="header-modal__thumb">
+						<img src="./images/header-hero/header-modal-ice-cream-1.jpg" 
+                        srcset="./images/header-hero/header-modal-ice-cream-1.jpg 1x,
+                                        ./images/header-hero/header-modal-ice-cream-1@2x.jpg 2x" 
+                                        alt="Ice cream"
+							class="header-modal__image" width="132">
+					</div>
+				</div>
+				<p class="header-modal__text">Milkshake</p>
+			</li>
+		</ul>
+		<form action="" class="header-modal__form">
+			<input class="header-modal__input" type="text" placeholder="Name" name="userName" autocomplete="off">
+			<input class="header-modal__input" type="tel" placeholder="Phone" name="userTel" autocomplete="off">
+			<textarea class="header-modal__textarea" name="userComment" id="" placeholder="Comment"></textarea>
+		</form>
+		<button type="submit" class="header-modal__submit-button btn">Submit</button>
+	</div>
+</div>
