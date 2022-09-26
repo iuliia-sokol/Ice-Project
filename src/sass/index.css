@@ -1065,12 +1065,31 @@ a,
     font-size: 14px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .about__text--first {
+    font-size: 16px;
+  }
+}
+.about__text--second {
+  line-height: 1.62;
+}
+@media screen and (min-width: 768px) {
+  .about__text--second {
+    line-height: 1.76;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__text--second {
+    line-height: 1.94;
+  }
+}
 .about__text--hidden {
   display: none;
 }
 @media screen and (min-width: 768px) {
   .about__text--hidden {
     display: block;
+    line-height: 1.94;
   }
 }
 
@@ -1083,6 +1102,35 @@ a,
 @media screen and (min-width: 768px) {
   .about-btn {
     margin-top: 40px;
+  }
+}
+.about-btn:hover,
+.about-btn :focus {
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0px);
+  }
+  32% {
+    transform: translateX(5px);
+  }
+  48% {
+    transform: translateX(-5px);
+  }
+  64% {
+    transform: translateX(3px);
+  }
+  80% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
 
@@ -1145,6 +1193,9 @@ a,
   background-color: transparent;
   padding: 0;
   outline: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+  transform: rotate(-90deg);
 }
 @media screen and (min-width: 768px) {
   .about-close-btn {
@@ -1154,17 +1205,16 @@ a,
     right: 20px;
   }
 }
+.about-close-btn:hover,
+.about-close-btn :focus {
+  transform: scale(1.15);
+  transform: rotate(1turn);
+}
 
 .about-close-btn__icon {
   width: 16px;
   height: 16px;
   background-color: #fcfcfc;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: fill, transform;
-}
-.about-close-btn:hover .about-close-btn__icon, .about-close-btn:focus .about-close-btn__icon {
-  fill: #0a8817;
-  transform: scale(1.2);
 }
 @media screen and (min-width: 768px) {
   .about-close-btn__icon {
@@ -1216,6 +1266,7 @@ a,
 }
 
 .advantages {
+  margin-top: -1px;
   background-color: #84a178;
   color: #fcfcfc;
   padding-top: 0;
