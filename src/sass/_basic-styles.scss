@@ -17,6 +17,17 @@ ul {
   margin: 0;
 }
 
+a,
+button {
+  cursor: url('../images/cursor.png'), auto;
+}
+
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+  cursor: url('../images/cursor-orange.png'), auto;
+}
 // ВИКОРИСТОВУЄМО ДЛЯ ПРИХОВАНИХ ЕЛЕМЕНТІВ
 
 .visually-hidden {
@@ -70,7 +81,6 @@ a,
   text-align: center;
   border-radius: 10px;
   padding: 12px 34px;
-  cursor: pointer;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
