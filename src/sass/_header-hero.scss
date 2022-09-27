@@ -73,6 +73,10 @@
       font-weight: 700;
       font-size: 16px;
       line-height: 1.25;
+
+      transition-property: color;
+      transition-duration: 500ms;
+
       &:hover,
       &:focus {
         color: $accent-yellow;
@@ -94,11 +98,15 @@
     padding: 12px 34px;
     border: none;
     background-color: $accent-yellow;
+    transition-property: background-color;
+    transition-duration: 500ms;
   }
   &:hover {
     background-color: $accent-green;
+    @include animation-shake;
   }
   &:focus {
+    @include animation-shake;
     background-color: $accent-green;
     color: $main-white;
   }
@@ -338,6 +346,9 @@
     border-radius: 8px;
     @media screen and (min-width: 1200px) {
       border-radius: 10px;
+
+      transition-property: border-color, color;
+      transition-duration: 500ms;
     }
     &:hover {
       border-color: $accent-green;
@@ -359,6 +370,7 @@
   text-decoration-line: underline;
   color: $accent-yellow;
   border: none;
+
   &:hover {
     color: $accent-green;
   }
@@ -421,6 +433,7 @@
     &__image {
       width: 152px;
       height: auto;
+
       @media screen and (min-width: 1200px) {
         width: 225px;
       }
@@ -463,10 +476,10 @@
       height: 20px;
     }
     &__link:hover {
-      transform: scale(1.2);
+      @include animation-bounce;
     }
     &__link:focus {
-      transform: scale(1.2);
+      @include animation-bounce;
       stroke: $main-white;
       stroke-width: 1px;
     }
@@ -722,10 +735,15 @@ body.modal-header-open {
   justify-content: center;
   align-items: center;
   fill: $main-black;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+  transform: rotate(-90deg);
+
   &:hover,
-  &:focus {
-    fill: $accent-yellow;
-    scale: 1.5;
+  :focus {
+    transform: scale(1.15);
+    transform: rotate(1turn);
   }
 }
 
@@ -740,9 +758,11 @@ body.modal-header-open {
   justify-content: center;
   background-color: $accent-yellow;
   &:hover {
+    @include animation-shake;
     background-color: $accent-green;
   }
   &:focus {
+    @include animation-shake;
     background-color: $accent-green;
     color: $main-white;
   }
