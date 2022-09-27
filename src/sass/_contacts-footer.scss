@@ -209,10 +209,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
   }
-  @media screen and (min-width: 768px) {
-    padding-bottom: 54px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 54px;
   }
 }
 .footer-title {
@@ -261,7 +261,7 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 24px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 6px;
   }
 }
@@ -352,9 +352,10 @@
 }
 
 .footer-ltd {
+  position: relative;
   display: flex;
   justify-content: center;
-  border-top: 1px solid $footer-divider-grey;
+  // border-top: 1px solid $footer-divider-grey;
   padding-top: 16px;
   width: 100%;
   text-align: center;
@@ -365,6 +366,14 @@
   @media screen and (min-width: 1200px) {
     padding-top: 12px;
   }
+}
+.footer-ltd::before {
+  content: '';
+  height: 1px;
+  width: 100vw;
+  background-color: $footer-divider-grey;
+  position: absolute;
+  top: 0;
 }
 .footer-company {
   display: flex;
