@@ -39,9 +39,11 @@
   }
   @media screen and (min-width: 768px) {
     width: 224px;
+    padding: 40px 24px;
     @include font(500, 14px, 1.83, 0.04em);
   }
   @media screen and (min-width: 1200px) {
+    padding: 40px;
     width: 368px;
     @include font(500, 16px, 1.86, 0.04em);
   }
@@ -55,6 +57,7 @@
   background: $accent-yellow;
   border-radius: 4px;
   @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
     padding-right: 14px;
     padding-left: 14px;
   }
@@ -90,10 +93,10 @@
 }
 
 .mode-data {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  margin-top: 22px;
+  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-top: 1px solid $footer-divider-grey;
   border-bottom: 1px solid $footer-divider-grey;
   @media screen and (min-width: 768px) {
@@ -126,6 +129,9 @@
   @media screen and (min-width: 1200px) {
     @include font(500, 16px, 1.86, 0.04em);
   }
+}
+.contact-mode-time:last-of-type {
+  margin-bottom: 0;
 }
 
 .contact-links {
@@ -203,10 +209,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
   }
-  @media screen and (min-width: 768px) {
-    padding-bottom: 54px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 54px;
   }
 }
 .footer-title {
@@ -255,7 +261,7 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 24px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 6px;
   }
 }
@@ -271,8 +277,8 @@
   }
 }
 .soc__item {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   @media screen and (min-width: 768px) {
     width: 34px;
     height: 34px;
@@ -297,6 +303,12 @@
 
 .soc__icon {
   fill: $main-bg-green;
+  width: 32px;
+  height: 32px;
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .soc__icon:hover,
@@ -340,9 +352,10 @@
 }
 
 .footer-ltd {
+  position: relative;
   display: flex;
   justify-content: center;
-  border-top: 1px solid $footer-divider-grey;
+  // border-top: 1px solid $footer-divider-grey;
   padding-top: 16px;
   width: 100%;
   text-align: center;
@@ -353,6 +366,14 @@
   @media screen and (min-width: 1200px) {
     padding-top: 12px;
   }
+}
+.footer-ltd::before {
+  content: '';
+  height: 1px;
+  width: 100vw;
+  background-color: $footer-divider-grey;
+  position: absolute;
+  top: 0;
 }
 .footer-company {
   display: flex;
