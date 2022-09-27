@@ -135,7 +135,7 @@
     &.ice-coffee {
       background-color: $bg-yellow;
       &::before {
-        background-image: linear-gradient(
+        background: linear-gradient(
             0deg,
             rgba(248, 210, 78, 0.7),
             rgba(248, 210, 78, 0.7)
@@ -149,7 +149,7 @@
       margin-bottom: 0;
       background-color: $bg-orange;
       &::before {
-        background-image: linear-gradient(
+        background: linear-gradient(
             0deg,
             rgba(213, 117, 63, 0.7),
             rgba(213, 117, 63, 0.7)
@@ -169,7 +169,7 @@
       top: -200px;
       left: 50%;
       transform: translate(-50%, 50%);
-      background-image: linear-gradient(
+      background: linear-gradient(
           0deg,
           rgba(156, 190, 143, 0.7),
           rgba(156, 190, 143, 0.7)
