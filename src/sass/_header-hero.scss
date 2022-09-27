@@ -559,7 +559,7 @@ body.modal-header-open {
   background-color: $main-white;
   opacity: 1;
   border-radius: 10px;
-  overflow: auto;
+  overflow-y: scroll;
   @include transition(transform);
   @media screen and (max-width: 767px) {
     width: 480px;
