@@ -7,7 +7,7 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  @include transition(opacity);
+  @include transition(opacity, visibility);
 }
 
 .footer-map {
@@ -21,7 +21,7 @@
   border-radius: 10px;
   border: 2px solid $accent-yellow;
   transform: translate(-50%, -50%) scale(1);
-  @include transition(transform);
+  @include transition(transform, opacity, visibility);
 
   .footer-map-overlay.is-hidden & {
     transform: translate(-50%, -50%) scale(2);

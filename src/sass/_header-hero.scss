@@ -130,7 +130,8 @@
   background-color: #85a279;
   transform-origin: top right;
   transform: scale(1);
-  @include transition(transform);
+  visibility: 1;
+  @include transition(transform, visibility, opacity);
   &__container {
     position: relative;
     max-width: calc(100% - 40px);
@@ -155,6 +156,8 @@
 @media (max-width: 1199px) {
   .header-menu.is-hidden {
     transform: scale(0);
+    opacity: 0;
+    visibility: hidden;
   }
 }
 .header-menu__logo {
@@ -537,8 +540,7 @@ body.modal-header-open {
   overflow-y: scroll;
 
   background-color: rgba(0, 0, 0, 0.2);
-  @include transition(opacity);
-  @include transition(visibility);
+  @include transition(opacity, visibility, transform);
 }
 
 .is-hidden {
