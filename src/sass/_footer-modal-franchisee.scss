@@ -7,7 +7,7 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  @include transition(opacity);
+  @include transition(opacity, visibility);
 }
 
 .footer-franchisee {
@@ -21,10 +21,10 @@
   border-radius: 10px;
   border: 2px solid $accent-yellow;
   transform: translate(-50%, -50%) scale(1);
-  @include transition(transform);
+  @include transition(transform, opacity, visibility);
 
   .footer-franchisee-overlay.is-hidden & {
-    transform: translate(-50%, -50%) scale(2);
+    transform: translate(-50%, -50%) scale(1.5);
   }
   &__wrapper {
     width: 100%;
@@ -116,10 +116,9 @@
     border-radius: 10px;
     outline: none;
     font-size: 12px;
-      @media screen and (min-width: 768px) {
-    font-size: 14px;
-  }
-
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
 
     @include transition(border);
   }
@@ -134,10 +133,9 @@
     font-size: 12px;
     // overflow: scroll;
     resize: none;
-      @media screen and (min-width: 768px) {
-    font-size: 14px;
-  }
-
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
 
     @include transition(border);
   }
