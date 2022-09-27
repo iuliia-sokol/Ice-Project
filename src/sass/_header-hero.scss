@@ -532,10 +532,8 @@ body.modal-header-open {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   z-index: 4;
-  overflow-y: scroll;
-
   background-color: rgba(0, 0, 0, 0.2);
   @include transition(opacity);
   @include transition(visibility);
