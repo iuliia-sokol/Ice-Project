@@ -131,7 +131,11 @@
   transform-origin: top right;
   transform: scale(1);
   visibility: 1;
-  @include transition(transform, visibility, opacity);
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &__container {
     position: relative;
     max-width: calc(100% - 40px);
@@ -153,12 +157,11 @@
     }
   }
 }
-@media (max-width: 1199px) {
-  .header-menu.is-hidden {
-    transform: scale(0);
-    opacity: 0;
-    visibility: hidden;
-  }
+
+.header-menu.is-hidden {
+  transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
 }
 .header-menu__logo {
   position: absolute;
@@ -540,7 +543,9 @@ body.modal-header-open {
   overflow-y: scroll;
 
   background-color: rgba(0, 0, 0, 0.2);
-  @include transition(opacity, visibility, transform);
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -553,6 +558,7 @@ body.modal-header-open {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   min-width: 280px;
   width: 100%;
   padding: 28px;
@@ -562,8 +568,7 @@ body.modal-header-open {
   opacity: 1;
   border-radius: 10px;
   overflow: auto;
-  @include transition(transform);
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     width: 480px;
   }
   @media screen and (min-width: 768px) {
@@ -701,6 +706,7 @@ body.modal-header-open {
     padding: 8px 12px;
     width: 100%;
     max-width: 368px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
       border-color: $accent-yellow;
@@ -727,6 +733,7 @@ body.modal-header-open {
     outline: none;
     min-height: 65px;
     resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
       border-color: $accent-yellow;
