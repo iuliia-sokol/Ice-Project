@@ -3,18 +3,24 @@ const closeProductModalBtn = document.querySelector('.products-close-btn-1');
 const productModal = document.querySelector('.products-backdrop-1');
 const productModalWindow = document.querySelector('.products-modal-1');
 const productModalForm = document.querySelector('.products-form-1');
-const animateElement1 = document.querySelector('.products__form-title');
-const animateElement2 = document.querySelector('.products__form-wrap-img');
-const animateElement3 = document.querySelector('.products__form-img');
-const animateElement4 = document.querySelector('.products__form-mcrlmnt-list');
-const animateElement5 = document.querySelector('.products__description-list');
-const animateElement6 = document.querySelector('.products__description-title');
-const animateElement7 = document.querySelector('.products__form-field');
-const animateElement8 = document.querySelector('.products__form-mcrlmnt-text');
-const animateElement9 = document.querySelector('.circle-1');
-const animateElement10 = document.querySelector('.circle-2');
-const animateElement11 = document.querySelector('.circle-3');
-const animateElement12 = document.querySelector('.circle-4');
+const animateElement1 = document.querySelector('.products__form-title-1');
+const animateElement2 = document.querySelector('.products__form-wrap-img-1');
+const animateElement3 = document.querySelector('.products__form-img-1');
+const animateElement4 = document.querySelector(
+  '.products__form-mcrlmnt-list-1'
+);
+const animateElement5 = document.querySelector('.products__description-list-1');
+const animateElement6 = document.querySelector(
+  '.products__description-title-1'
+);
+const animateElement7 = document.querySelector('.products__form-field-1');
+const animateElement8 = document.querySelector(
+  '.products__form-mcrlmnt-text-1'
+);
+const animateElement9 = document.querySelector('.circle1_1');
+const animateElement10 = document.querySelector('.circle1_2');
+const animateElement11 = document.querySelector('.circle1_3');
+const animateElement12 = document.querySelector('.circle1_4');
 
 openProductModalBtn.addEventListener('click', function () {
   productModal.classList.remove('is-hidden');

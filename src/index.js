@@ -1,6 +1,8 @@
 import './javascript/header-modal';
 import './javascript/header-mobile-menu';
 import './javascript/products-modal-1';
+import './javascript/products-modal-2';
+import './javascript/products-modal-3';
 import './javascript/about-modal';
 import './javascript/slider';
 import './javascript/footer-franchisee';
