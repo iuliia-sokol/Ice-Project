@@ -12,17 +12,19 @@
     background-size: cover;
     z-index: 100;
     opacity: 1;
+    background-image: url('../images/backdrop-modal-1x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     @include transition(opacity, visibility);
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .products {
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url('../images/backdrop-modal-2x.png');
       background-position: center;
     }
   }
-
   &__button-close {
     width: 16px;
     height: 16px;

@@ -7,7 +7,18 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  z-index: 100;
+  background-image: url('../images/backdrop-modal-1x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   @include transition(opacity, visibility);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/backdrop-modal-2x.png');
+    background-position: center;
+  }
 }
 
 .footer-franchisee {
@@ -24,7 +35,7 @@
   @include transition(transform, opacity, visibility);
 
   .footer-franchisee-overlay.is-hidden & {
-    transform: translate(-50%, -50%) scale(1.5);
+    transform: translate(-50%, -50%) scale(0);
   }
   &__wrapper {
     width: 100%;
