@@ -225,12 +225,25 @@
   height: 100%;
   padding-top: 20px;
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 99;
+  background-image: url('../images/backdrop-modal-1x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100;
   opacity: 1;
   @include transition(opacity, visibility);
 
   &.is-hidden .about-modal {
-    transform: translate(-50%, -50%) scale(1.5);
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .about-backdrop {
+    background-image: url('../images/backdrop-modal-2x.png');
+    background-position: center;
   }
 }
 
@@ -245,7 +258,7 @@
   background-color: $main-white;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transform: translate(-50%, -50%) scale(1);
   border: 2px solid #f8d24e;
   border-radius: 10px;
   padding: 28px;

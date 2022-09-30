@@ -541,17 +541,21 @@ body.modal-header-open {
   height: 100vh;
   z-index: 4;
   overflow-y: scroll;
-
   background-color: rgba(0, 0, 0, 0.2);
-
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-image: url('../images/backdrop-modal-1x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include transition(opacity, visibility);
 }
 
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .header__backdrop {
+    background-image: url('../images/backdrop-modal-2x.png');
+    background-position: center;
+  }
 }
 
 .header-modal {
@@ -584,7 +588,14 @@ body.modal-header-open {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 70px;
+
+    @media screen and(min-width: 768px) {
+      font-size: 20px;
+      line-height: calc(28 / 20);
+      margin-bottom: 90px;
+    }
   }
+
   &__list {
     margin-left: auto;
     margin-right: auto;
@@ -757,7 +768,6 @@ body.modal-header-open {
   position: absolute;
   top: 8px;
   right: 8px;
-
   border: none;
   width: 16px;
   height: 16px;
@@ -768,15 +778,32 @@ body.modal-header-open {
   justify-content: center;
   align-items: center;
   fill: $main-black;
-
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: transform;
   transform: rotate(-90deg);
+
+  @media screen and(min-width: 768px) {
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+  }
 
   &:hover,
   :focus {
     transform: scale(1.5);
     transform: rotate(1turn);
+  }
+}
+
+.header-modal__close-icon {
+  width: 16px;
+  height: 16px;
+  background-color: $main-white;
+
+  @media screen and(min-width: 768px) {
+    width: 20px;
+    height: 20px;
   }
 }
 
