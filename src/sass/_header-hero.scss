@@ -538,7 +538,7 @@ body.modal-header-open {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   padding: 20px;
   z-index: 4;
   overflow-y: scroll;
@@ -570,6 +570,7 @@ body.modal-header-open {
   background-color: $main-white;
   opacity: 1;
   border-radius: 10px;
+  border: 2px solid $accent-yellow;
   overflow-y: scroll;
   @include transition(transform);
 
