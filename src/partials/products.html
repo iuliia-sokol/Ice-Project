@@ -44,7 +44,10 @@
             and natural stabilizer
           </p>
           <div class="products__btn-wrapper">
-            <button class="products__btn products-btn-1" type="button">
+            <button
+              class="products__btn products-btn-1 js-open-product-modal"
+              type="button"
+            >
               <svg class="products__icon">
                 <use href="./images/icons.svg#arrow"></use>
               </svg>
@@ -93,7 +96,10 @@
             without the use of preservatives and flavor enhancers
           </p>
           <div class="products__btn-wrapper">
-            <button class="products__btn products-btn-2" type="button">
+            <button
+              class="products__btn products-btn-2 js-open-product-modal"
+              type="button"
+            >
               <svg class="products__icon">
                 <use href="./images/icons.svg#arrow"></use>
               </svg>
@@ -142,7 +148,10 @@
             fruits, berries and other sweets of your choice
           </p>
           <div class="products__btn-wrapper">
-            <button class="products__btn products-btn-3" type="button">
+            <button
+              class="products__btn products-btn-3 js-open-product-modal"
+              type="button"
+            >
               <svg class="products__icon">
                 <use href="./images/icons.svg#arrow"></use>
               </svg>
@@ -155,21 +164,26 @@
 </section>
 
 <!-- MODAL 1 -->
-<div class="products__backdrop products-backdrop-1 is-hidden">
-  <div class="products__form products-modal-1">
-    <button class="products__button-close products-close-btn-1" type="button">
+<div
+  class="products__backdrop is-hidden js-product-backdrop"
+  data-backdrop="product-1"
+>
+  <div class="products__form js-product-window">
+    <button class="products__button-close js-close-product-modal" type="button">
       <svg class="products__button-icon">
         <use href="./images/icons.svg#btn-close"></use>
       </svg>
     </button>
     <div class="products__container">
-      <h3 class="products__form-title products__form-title-1">
+      <h3 class="products__form-title js-product-header">
         Chololate <br />
         icecream
       </h3>
-      <div class="products__form-wrap-img products__form-wrap-img-1">
+      <div
+        class="products__form-wrap-img products__form-wrap-img-1 js-form-wrap-img"
+      >
         <img
-          class="products__form-img products__form-img-1"
+          class="products__form-img products__form-img-1 js-product-form-img"
           srcset="
             ./images/products/ice1-form-mob.jpg    1x,
             ./images/products/ice1-form-mob@2x.jpg 2x
@@ -178,53 +192,47 @@
           alt="choco icecream"
         />
       </div>
-      <ul class="products__form-mcrlmnt-list products__form-mcrlmnt-list-1">
+      <ul class="products__form-mcrlmnt-list js-product-form-list">
         <li class="products__form-mcrlmnt-item products__form-mcrlmnt-item-1">
           <p
-            class="products__form-mcrlmnt-text products__form-mcrlmnt-text-1 circle circle-1 circle1_1"
+            class="products__form-mcrlmnt-text js-product-form-text circle circle-1 circle1_1 js-circle"
           >
             320
           </p>
-          <p class="products__form-mcrlmnt-text products__form-mcrlmnt-text-1">
-            kcal
-          </p>
+          <p class="products__form-mcrlmnt-text js-product-form-text">kcal</p>
         </li>
         <li class="products__form-mcrlmnt-item products__form-mcrlmnt-item-1">
           <p
-            class="products__form-mcrlmnt-text products__form-mcrlmnt-text-1 circle circle-2 circle1_2"
+            class="products__form-mcrlmnt-text js-product-form-text circle circle-2 circle1_2 js-circle"
           >
             4g
           </p>
-          <p class="products__form-mcrlmnt-text products__form-mcrlmnt-text-1">
+          <p class="products__form-mcrlmnt-text js-product-form-text">
             Protein
           </p>
         </li>
         <li class="products__form-mcrlmnt-item products__form-mcrlmnt-item-1">
           <p
-            class="products__form-mcrlmnt-text products__form-mcrlmnt-text-1 circle circle-3 circle1_3"
+            class="products__form-mcrlmnt-text js-product-form-text circle circle-3 circle1_3 js-circle"
           >
             8,2g
           </p>
-          <p class="products__form-mcrlmnt-text products__form-mcrlmnt-text-1">
-            Fats
-          </p>
+          <p class="products__form-mcrlmnt-text js-product-form-text">Fats</p>
         </li>
         <li class="products__form-mcrlmnt-item products__form-mcrlmnt-item-1">
           <p
-            class="products__form-mcrlmnt-text products__form-mcrlmnt-text-1 circle circle-4 circle1_4"
+            class="products__form-mcrlmnt-text js-product-form-text circle circle-4 circle1_4 js-circle"
           >
             40,4g
           </p>
-          <p class="products__form-mcrlmnt-text products__form-mcrlmnt-text-1">
-            Carbs
-          </p>
+          <p class="products__form-mcrlmnt-text js-product-form-text">Carbs</p>
         </li>
       </ul>
-      <p class="products__description-title products__description-title-1">
+      <p class="products__description-title js-product-description-title">
         Ingredients
       </p>
       <div class="products__description-wrap">
-        <ul class="products__description-list products__description-list-1">
+        <ul class="products__description-list js-product-description-list">
           <li class="products__description-item">
             <p class="products__description-text">Milk</p>
             <p class="products__description-text">100ml</p>
@@ -253,7 +261,7 @@
       </div>
 
       <form
-        class="products__form-field products__form-field-1 products-form-1"
+        class="products__form-field js-products-form"
         action="javascript:void(0);"
       >
         <input
@@ -284,21 +292,26 @@
 
 <!-- MODAL 2 -->
 
-<div class="products__backdrop products-backdrop-2 is-hidden">
-  <div class="products__form products-modal-2">
-    <button class="products__button-close products-close-btn-2" type="button">
+<div
+  class="products__backdrop js-product-backdrop is-hidden"
+  data-backdrop="product-2"
+>
+  <div class="products__form js-product-window">
+    <button class="products__button-close js-close-product-modal" type="button">
       <svg class="products__button-icon">
         <use href="./images/icons.svg#btn-close"></use>
       </svg>
     </button>
     <div class="products__container">
-      <h3 class="products__form-title products__form-title-2">
+      <h3 class="products__form-title js-product-header">
         Ice <br />
         coffee
       </h3>
-      <div class="products__form-wrap-img products__form-wrap-img-2">
+      <div
+        class="products__form-wrap-img products__form-wrap-img-2 js-form-wrap-img"
+      >
         <img
-          class="products__form-img products__form-img-2"
+          class="products__form-img products__form-img-2 js-product-form-img"
           srcset="
             ./images/products/coffee-mob.png    1x,
             ./images/products/coffee-mob@2x.png 2x
@@ -307,53 +320,47 @@
           alt="ice coffee"
         />
       </div>
-      <ul class="products__form-mcrlmnt-list products__form-mcrlmnt-list-2">
+      <ul class="products__form-mcrlmnt-list js-product-form-list">
         <li class="products__form-mcrlmnt-item products__form-mcrlmnt-item-2">
           <p
-            class="products__form-mcrlmnt-text products__form-mcrlmnt-text-2 circle circle-1 circle2_1"
+            class="products__form-mcrlmnt-text js-product-form-text circle circle-1 circle2_1 js-circle"
           >
             23
           </p>
-          <p class="products__form-mcrlmnt-text products__form-mcrlmnt-text-2">
-            kcal
-          </p>
+          <p class="products__form-mcrlmnt-text js-product-form-text">kcal</p>
         </li>
         <li class="products__form-mcrlmnt-item products__form-mcrlmnt-item-2">
           <p
-            class="products__form-mcrlmnt-text products__form-mcrlmnt-text-2 circle circle-2 circle2_2"
+            class="products__form-mcrlmnt-text js-product-form-text circle circle-2 circle2_2 js-circle"
           >
             2g
           </p>
-          <p class="products__form-mcrlmnt-text products__form-mcrlmnt-text-2">
+          <p class="products__form-mcrlmnt-text js-product-form-text">
             Protein
           </p>
         </li>
         <li class="products__form-mcrlmnt-item products__form-mcrlmnt-item-2">
           <p
-            class="products__form-mcrlmnt-text products__form-mcrlmnt-text-2 circle circle-3 circle2_3"
+            class="products__form-mcrlmnt-text js-product-form-text circle circle-3 circle2_3 js-circle"
           >
             1g
           </p>
-          <p class="products__form-mcrlmnt-text products__form-mcrlmnt-text-2">
-            Fats
-          </p>
+          <p class="products__form-mcrlmnt-text js-product-form-text">Fats</p>
         </li>
         <li class="products__form-mcrlmnt-item products__form-mcrlmnt-item-2">
           <p
-            class="products__form-mcrlmnt-text products__form-mcrlmnt-text-2 circle circle-4 circle2_4"
+            class="products__form-mcrlmnt-text js-product-form-text circle circle-4 circle2_4 js-circle"
           >
             3g
           </p>
-          <p class="products__form-mcrlmnt-text products__form-mcrlmnt-text-2">
-            Carbs
-          </p>
+          <p class="products__form-mcrlmnt-text js-product-form-text">Carbs</p>
         </li>
       </ul>
-      <p class="products__description-title products__description-title-2">
+      <p class="products__description-title js-product-description-title">
         Ingredients
       </p>
       <div class="products__description-wrap">
-        <ul class="products__description-list products__description-list-2">
+        <ul class="products__description-list js-product-description-list">
           <li class="products__description-item">
             <p class="products__description-text">Milk</p>
             <p class="products__description-text">50ml</p>
@@ -382,7 +389,7 @@
       </div>
 
       <form
-        class="products__form-field products-form-2 products__form-field-2"
+        class="products__form-field js-products-form"
         action="javascript:void(0);"
       >
         <input
@@ -413,18 +420,23 @@
 
 <!-- MODAL 3 -->
 
-<div class="products__backdrop products-backdrop-3 is-hidden">
-  <div class="products__form products-modal-3">
-    <button class="products__button-close products-close-btn-3" type="button">
+<div
+  class="products__backdrop js-product-backdrop is-hidden"
+  data-backdrop="product-3"
+>
+  <div class="products__form js-product-window">
+    <button class="products__button-close js-close-product-modal" type="button">
       <svg class="products__button-icon">
         <use href="./images/icons.svg#btn-close"></use>
       </svg>
     </button>
     <div class="products__container">
-      <h3 class="products__form-title products__form-title-3">Milkshakes</h3>
-      <div class="products__form-wrap-img products__form-wrap-img-3">
+      <h3 class="products__form-title js-product-header">Milkshakes</h3>
+      <div
+        class="products__form-wrap-img products__form-wrap-img-3 js-form-wrap-img"
+      >
         <img
-          class="products__form-img products__form-img-3"
+          class="products__form-img products__form-img-3 js-product-form-img"
           srcset="
             ./images/products/milk-mob.png    1x,
             ./images/products/milk-mob@2x.png 2x
@@ -433,53 +445,47 @@
           alt="ice coffee"
         />
       </div>
-      <ul class="products__form-mcrlmnt-list products__form-mcrlmnt-list-3">
+      <ul class="products__form-mcrlmnt-list js-product-form-list">
         <li class="products__form-mcrlmnt-item products__form-mcrlmnt-item-3">
           <p
-            class="products__form-mcrlmnt-text products__form-mcrlmnt-text-3 circle circle-1 circle3_1"
+            class="products__form-mcrlmnt-text js-product-form-text circle circle-1 circle3_1 js-circle"
           >
             671
           </p>
-          <p class="products__form-mcrlmnt-text products__form-mcrlmnt-text-3">
-            kcal
-          </p>
+          <p class="products__form-mcrlmnt-text js-product-form-text">kcal</p>
         </li>
         <li class="products__form-mcrlmnt-item products__form-mcrlmnt-item-3">
           <p
-            class="products__form-mcrlmnt-text products__form-mcrlmnt-text-2 circle circle-2 circle3_2"
+            class="products__form-mcrlmnt-text js-product-form-text circle circle-2 circle3_2 js-circle"
           >
             15g
           </p>
-          <p class="products__form-mcrlmnt-text products__form-mcrlmnt-text-3">
+          <p class="products__form-mcrlmnt-text js-product-form-text">
             Protein
           </p>
         </li>
         <li class="products__form-mcrlmnt-item products__form-mcrlmnt-item-3">
           <p
-            class="products__form-mcrlmnt-text products__form-mcrlmnt-text-3 circle circle-3 circle3_3"
+            class="products__form-mcrlmnt-text js-product-form-text circle circle-3 circle3_3 js-circle"
           >
             37g
           </p>
-          <p class="products__form-mcrlmnt-text products__form-mcrlmnt-text-3">
-            Fats
-          </p>
+          <p class="products__form-mcrlmnt-text js-product-form-text">Fats</p>
         </li>
         <li class="products__form-mcrlmnt-item products__form-mcrlmnt-item-3">
           <p
-            class="products__form-mcrlmnt-text products__form-mcrlmnt-text-3 circle circle-4 circle3_4"
+            class="products__form-mcrlmnt-text js-product-form-text circle circle-4 circle3_4 js-circle"
           >
             70g
           </p>
-          <p class="products__form-mcrlmnt-text products__form-mcrlmnt-text-3">
-            Carbs
-          </p>
+          <p class="products__form-mcrlmnt-text js-product-form-text">Carbs</p>
         </li>
       </ul>
-      <p class="products__description-title products__description-title-3">
+      <p class="products__description-title js-product-description-title">
         Ingredients
       </p>
       <div class="products__description-wrap">
-        <ul class="products__description-list products__description-list-3">
+        <ul class="products__description-list js-product-description-list">
           <li class="products__description-item">
             <p class="products__description-text">Semi-skimmed milk</p>
             <p class="products__description-text">250ml</p>
@@ -508,7 +514,7 @@
       </div>
 
       <form
-        class="products__form-field products-form-3 products__form-field-3"
+        class="products__form-field js-products-form"
         action="javascript:void(0);"
       >
         <input
