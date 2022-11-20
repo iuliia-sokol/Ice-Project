@@ -1,30 +1,19 @@
 const refs = {
   openProductModalBtn: document.querySelectorAll('.js-open-product-modal'),
-
   closeProductModalBtn: document.querySelectorAll('.js-close-product-modal'),
-
   productModal: document.querySelectorAll('.js-product-backdrop'),
-
   productModalWindow: document.querySelectorAll('.js-product-window'),
-
   productModalForm: document.querySelectorAll('.js-products-form'),
-
   productFormHeaders: document.querySelectorAll('.js-product-header'),
-
   productFormWrapImg: document.querySelectorAll('.js-form-wrap-img'),
-
   productFormImg: document.querySelectorAll('.js-product-form-img'),
-
   productFormList: document.querySelectorAll('.js-product-form-list'),
-
   productFormDescriptionList: document.querySelectorAll(
     '.js-product-description-list'
   ),
-
   productFormDescriptionHeader: document.querySelectorAll(
     '.js-product-description-title'
   ),
-
   productFormIndicatorText: document.querySelectorAll('.js-product-form-text'),
   productFormIndicatorCircles: document.querySelectorAll('.js-circle'),
 };
@@ -90,7 +79,6 @@ function onProductModalClose(event) {
   productWrapImgs[index].classList.toggle('animation-fade-in');
   productImgs[index].classList.toggle('animation-ping-pong');
   productFormList[index].classList.toggle('animation-fade-in');
-
   productDescrList[index].classList.toggle('animation-fade-in');
   productDescrTitle[index].classList.toggle('animation-fade-in');
   productForms[index].classList.toggle('animation-fade-in');
@@ -120,6 +108,7 @@ function onBackdropClick(e) {
   const closeProductModal = e.composedPath().includes(refs.productModalWindow);
   if (!closeProductModal) {
     onProductModalClose();
+    return;
   }
   return;
 }
